@@ -1,0 +1,58 @@
+@import "elements.less";
+@darken_4: #212121;
+@darken_3: #424242;
+@darken_2: #616161;
+@darken_1: #757575;
+
+@lighten_1: #bdbdbd;
+@lighten_5: #fafafa;
+
+html {
+    /*height:100%;*/
+}
+
+body {
+    background-color:@darken_4;
+    /*height:100%;*/
+    color: @lighten_5 !important;
+}
+
+#content, #left-nav {
+    padding:15px;
+}
+
+#content {
+    background-color: @darken_2;
+}
+
+#left-nav {
+    .nav-link {
+    background-color: @darken_3;
+    color: @lighten_1;
+    .transition-duration(0.5s);
+    margin-bottom: 5px;
+        &:hover {
+            color:@lighten_5;
+            background-color: @darken_1;
+        }
+    }
+}
+
+#section {
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .card {
+        color:@darken_4;
+        border:none;
+
+        .number {
+            font-size: 6rem;
+            font-weight: 700;
+        }
+    }
+}
+
+
+

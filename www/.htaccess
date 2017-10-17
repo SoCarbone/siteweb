@@ -1,0 +1,44 @@
+#--------------------------------------------------
+# URL rewriting
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Maintenance :
+#ErrorDocument 403 /maintenance.php 
+#deny from all 
+#allow from 90.118.100.4
+#<Files maintenance.php>
+#allow from all
+#</Files>
+
+# Pages :
+RewriteRule ^([a-zA-Z-]+).html$   index.php?page=$1 [L]
+
+#--------------------------------------------------
+# Protection du site complet :
+#--------------------------------------------------
+
+#AuthUserFile /home/carbonecnm/.htpasswd
+#AuthName "Site en maintenance"
+#AuthType Basic
+#Require valid-user
+
+#--------------------------------------------------
+# Protection de la partie Admin :
+#--------------------------------------------------
+
+#<Files admin.php>
+#AuthUserFile /home/carbonecnm/.htpasswd
+#AuthName "Accès restreint"
+#AuthType Basic
+#require valid-user
+#</Files>

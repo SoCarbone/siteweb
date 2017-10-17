@@ -1,0 +1,389 @@
+@import "elements.less";
+
+/***********************************************************************************************************************
+Commun
+***********************************************************************************************************************/
+
+@blue: #372f8c;
+@orange: #f57f17;
+.italic {
+    font-style: italic;
+}
+
+.blue {
+    color: @blue;
+}
+
+.white {
+    color: white;
+}
+
+body {
+    background: url('../img/bg.jpg') top center no-repeat @orange;
+    background-attachment: fixed;
+}
+
+p {
+    color: rgba(0, 0, 0, 1)
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #ffffff;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.jumbotron {
+    background: none;
+}
+
+#breadcrumb {
+    background-color: @blue;
+    &:after {
+        content: '';
+        width: 100%;
+        background: url("../img/breadcrumb-icon.png") top center no-repeat;
+        height: 81px;
+        position: absolute;
+        z-index: 20;
+    }
+}
+
+.content {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#up,
+.up {
+    background-color: #ffffff;
+    .box-shadow(0px 0px 8px);
+    h2 {
+        color: @orange;
+    }
+    h3 {
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: bold;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    z-index: 0;
+    .rounded(3px);
+    padding: 30px;
+}
+
+.big-blue {
+    background-color: @blue;
+    .box-shadow(0px 0px 8px);
+    z-index: 10;
+    .uk-button {
+        background-color: #ffffff;
+        .rounded(5px);
+        color: @blue;
+        text-transform: uppercase;
+        border: 2px solid @blue;
+        .transition-duration(0.5s);
+        max-width: 150px;
+        &:hover,
+        &:focus {
+            background: @blue;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: @orange;
+    border-color: @orange;
+    .transition-duration(0.5s);
+    &:hover {
+        background-color: @blue;
+        border-color: @blue;
+    }
+}
+
+#wide {
+    padding: 0;
+}
+
+a {
+    color: @blue;
+
+    &:hover {
+        color: @blue;
+    }
+}
+
+/***********************************************************************************************************************
+Header
+***********************************************************************************************************************/
+
+.top {
+    background-color: black;
+    padding:0 0;
+
+    p {
+        color: white;
+        margin: 0.5rem 0;
+
+        &:before,
+        &:after {
+            content: "[";
+            color: white;
+            margin: 0 4px;
+        }
+
+        &:after {
+            content: "]";
+        }
+    }
+
+    #p-phone {
+        text-align: right;
+    }
+
+}
+
+#logo {
+    max-width: 200px;
+}
+
+#nav-container {
+    margin-bottom: -1.4rem;
+}
+
+#nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 40;
+    padding-top: 40px;
+}
+
+.uk-navbar-nav>li>a {
+    color:@blue;
+    text-transform: capitalize;
+    .transition-duration(0.5s);
+    height:40px;
+    font-size: 1rem;
+    margin: 0 15px;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    /*background-color: @orange;*/
+    border-bottom: 2px solid @orange;
+    color: @orange;
+    font-weight: 400;
+}
+
+.uk-navbar-nav>li>a:hover {
+    color: @orange;
+}
+
+#arrow {
+    background: url(../img/arrow.png) top center no-repeat;
+    background-size: cover;
+    height: 40px;
+    z-index: 40;
+    position: relative;
+}
+
+.uk-modal {
+    z-index: 3000;
+}
+
+/***********************************************************************************************************************
+Home
+***********************************************************************************************************************/
+
+#intro {
+    padding: 0;
+    margin: 0 0 -1px 0;
+}
+
+.list-group-item {
+    background: none;
+    border: none;
+}
+
+.partners,
+.skill {
+    max-width: 300px;
+    border: 5px solid @blue;
+}
+
+.skill {
+    max-width: 225px;
+}
+
+/***********************************************************************************************************************
+Portfolio
+***********************************************************************************************************************/
+
+figure {
+    background-color: #ffffff;
+    z-index: 0;
+    h3 {
+        font-weight: 700;
+        text-transform: none;
+    }
+    p {
+        color: white;
+    }
+    .btn-primary {
+        color: @blue;
+        border-color: @blue;
+    }
+}
+
+.uk-overlay-background {
+    background: @orange;
+}
+
+.uk-overlay-icon:before {
+    color: @orange;
+}
+
+/***********************************************************************************************************************
+Contact
+***********************************************************************************************************************/
+
+.contact {
+    padding: 10px;
+
+    .name {
+        padding-bottom: 0;
+    }
+
+    .list-group-item {
+        padding-top: 0;
+        font-size: 1.2rem;
+    }
+}
+
+.g-recaptcha {
+    margin: 10px 0 !important;
+}
+
+/***********************************************************************************************************************
+Legal
+***********************************************************************************************************************/
+
+/***********************************************************************************************************************
+Footer
+***********************************************************************************************************************/
+
+.footer {
+    background-color: #282828;
+    box-shadow: none;
+    .inner-shadow(0 4px 8px 1);
+    p,
+    h3 {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    li {
+        list-style: none;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        a {
+            color: rgba(255, 255, 255, 0.6);
+            .transition-duration(0.5s);
+            &:hover {
+                color: @orange;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .nav-link {
+        padding: 0 1rem 0 0;
+        margin: 0 15px 0 0;
+    }
+}
+
+.footer-bottom {
+    background-color: #000000;
+    p {
+        color: rgba(255, 255, 255, 0.6);
+        &:before {
+            font-family: FontAwesome;
+            content: '\f1f9';
+            margin-right: 5px;
+        }
+    }
+    .uk-container {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+.ontop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: @blue;
+    color: #ffffff;
+}
+
+/***********************************************************************************************************************
+Media queries
+***********************************************************************************************************************/
+
+@media (min-width: 768px) {
+    #nav-container {
+        margin-bottom: -40px;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: none;
+        background-color: @orange;
+    }
+
+    #top {
+        #p-mail,
+        #p-phone {
+            text-align: center;
+        }
+    }
+
+    #logo {
+        max-width: 200px;
+    }
+
+    .abilities {
+        max-width: 275px;
+    }
+
+    .nav .nav-link {
+        margin: 0 5px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.1;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .web {
+        display: none;
+    }
+}
