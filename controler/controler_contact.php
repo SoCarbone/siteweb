@@ -16,12 +16,12 @@ $copie = 'non';
 $form_action = '';
 
 // Messages de confirmation du mail
-$message_envoye = '<div class="alert alert-success" role="alert">Votre message nous est bien parvenu !</div>';
-$message_non_envoye = '<div class="alert alert-danger" role="alert">L\'envoi du mail a échoué, veuillez réessayer SVP.</div>';
-$no_human = '<div class="alert alert-danger" role="alert">Vous n\'êtes pas humain !</div>';
+$message_envoye = '<div class="uk-alert-success" uk-alert><a class="uk-alert-close" uk-close></a><p>Votre message a bien été envoyé.</p></div>';
+$message_non_envoye = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>L\'envoi du mail a échoué, veuillez réessayer SVP.</p></div>';
+$no_human = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Vous n\'êtes pas humain !</p></div>';
 
 // Message d'erreur du formulaire
-$message_formulaire_invalide = '<div class="alert alert-danger" role="alert">Vérifiez que tous les champs soient bien remplis et que l\'email soit sans erreur.</div>';
+$message_formulaire_invalide = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Vérifiez que tous les champs soient bien remplis et que l\'email soit sans erreur.</p></div>';
 
 /*
 	********************************************************************************************
@@ -53,15 +53,17 @@ function IsEmail($email)
     return (($value === 0) || ($value === false)) ? false : true;
 }
 
-// ReCaptcha
-// Paramètre renvoyé par le recaptcha
-$response = $_POST['g-recaptcha-response'];
 // On récupère l'IP de l'utilisateur
 $remoteip = $_SERVER['REMOTE_ADDR'];
 
-$api_url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$response."&remoteip=".$remoteip;
-
-$decode = json_decode(file_get_contents($api_url), true);
+// ReCaptcha
+// Paramètre renvoyé par le recaptcha
+if(!empty($_POST['g-recaptcha-response']))
+{
+    $response = $_POST['g-recaptcha-response'];
+    $api_url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$response."&remoteip=".$remoteip;
+    $decode = json_decode(file_get_contents($api_url), true);
+}
 
 // formulaire envoyé, on récupère tous les champs.
 $lastname     = (isset($_POST['lastname']))     ? Rec($_POST['lastname'])     : '';

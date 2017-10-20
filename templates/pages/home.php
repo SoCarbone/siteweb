@@ -1,158 +1,121 @@
-<div class="container-fluid" id="intro" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:'500'}">
+<div class="uk-section" id="intro" uk-scrollspy="cls:uk-animation-slide-left; delay:500">
 
-    <img src="./img/big-illustration.jpg" class="web" alt="Le créateur tout en un !" />
-    <img src="./img/big-illustration-mobile.jpg" class="mobile" alt="Le créateur tout en un !" />
+    <div class="uk-inline-clip uk-transition-toggle uk-visible@m">
 
-</div>
-
-<div class="container-fluid pt-4 pb-5" id="breadcrumb">
-
-    <div class="container pt-4 pb-4">
-
-        <h1 class="text-center display-4" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:'750'}">Tous les métiers du numérique réunis en deux personnes.</h1>
-
-    </div>
-
-</div>
-
-<!--<div class="container-fluid up" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-    <div class="container content">
-
-        <p class="lead" data-uk-scrollspy="{cls:'uk-animation-slide-top'}">Je suis un <strong>Graphiste Illustrateur, Intégrateur web et Développeur PHP</strong> freelance, basé dans le triangle <strong>Orange, Avignon, Carpentras</strong>, qui travaille régulièrement pour des agences et des grandes entreprises. Grâce à mes multiples expériences, je crée de A à Z, divers <strong>applicatifs numériques</strong>.</p>
-
-    </div>
-
-</div>-->
-
-<div class="container-fluid">
-
-    <div class="container content">
-
-        <div class="row">
-
-            <div class="col-sm-12 col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
-
-                <img src="./img/partners/laetitia.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block partners" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Laëtitia DOENS</h2>
-                <p class="text-center mt-0 mb-3">Conseil en marketing et gestion de projet</hp>
-                    <p class="lead">15 ans d'expérience en Trade Marketing et Performance Digitale, 10 ans de conseil dans les secteurs de l'e-commerce, de la distribution et des marques. Gestion des budgets Agences, Retail & Grande Distribution.</p>
-
-            </div>
-
-            <div class="col-sm-12 col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
-
-                <img src="./img/partners/alexis.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block partners" alt="Alexis Colombo" />
-                <h2 class="text-center mt-3 mb-0">Alexis COLOMBO</h2>
-                <p class="text-center mt-0 mb-3">Développeur web et graphiste</hp>
-                <p class="lead">Il y a 10 ans, j'entame de front une carrière d'<strong>auteur de bandes-dessinées</strong> et de <strong>graphiste</strong> en communication.</p>
-                <p class="lead">Après 3 albums sortis en librairie, j’allie ces deux compétences en travaillant dans le monde du <strong>jeu web</strong>. J’alimente mon expérience en créant diverses <strong>chartes graphiques</strong> et <strong>illustrations</strong>. Je profite d'opportunités liées à ce domaine pour me former au <strong>motion-design</strong> et proposer à mes clients des <strong>vidéos</strong> dynamiques et accrocheuses.</p>
-                <p class="lead">Ma rencontre et ma collaboration étroite avec un leader du jeu marketing digital me permet d’augmenter mes compétences, notamment en <strong>intégration</strong> et en <strong>développement web</strong> mais aussi en <strong>conduite de projet</strong>.</p>
-                <p class="lead">Autodidacte et curieux par nature, je me forme au grès des demandes et des nouveaux projets.</p>
-
-            </div>
-
+        <img src="./img/big-illustration.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" />
+        <div class="uk-position-top-center">
+            <img src="./img/text-big-illustration.png" class="uk-transition-slide-top uk-margin-large-top uk-width-large" alt="Les créateurs tout en un !" />
         </div>
 
     </div>
 
+    <img src="./img/big-illustration-mobile.jpg" class="uk-hidden@m" alt="Le créateur tout en un !" />
+
+
+
 </div>
 
-<div class="big-blue" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+<div class="uk-section breadcrumb" uk-scrollspy="cls:uk-animation-slide-bottom; delay:750">
 
-    <div class="container content">
+    <div class="uk-container">
 
-        <h2 class="text-center display-4" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">"Nous mettons un point d’honneur à garder des relations humaines dans nos collaborations professionnelles"</h2>
+        <h1 class="uk-text-center uk-lead">Tous les métiers du digital réunis en deux personnes.</h1>
 
     </div>
 
 </div>
 
-<div class="container-fluid" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+<div class="uk-section">
 
-    <div class="container content">
+    <div class="uk-container">
 
-        <h2 class="display-4 mb-5">Nos services</h2>
+        <div class="uk-grid" uk-grid>
 
-        <div class="row">
+            <div class="uk-width-1-1 uk-width-1-2@m" uk-scrollspy="cls:uk-animation-slide-left">
 
-            <div class="col-sm-6 col-md-4 mb-5" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-                <img src="./img/skills/skill.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block skill" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Marketing numérique</h2>
-                <p class="lead text-center mt-0">Pour augmentez vos lead</p>
-                <p class="text-center">Etude et conseil pour votre stratégie marketing numérique.</p>
-
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-                <img src="./img/skills/skill.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block skill" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Gestion de projet</h2>
-                <p class="lead text-center mt-0">Pour améliorez votre productivité</p>
-                <p class="text-center">Planification et suivit de votre projet numérique</p>
-
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-                <img src="./img/skills/skill.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block skill" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Site web</h2>
-                <p class="lead text-center mt-0">Pour mettre en avant vos services</p>
-                <p class="text-center">Création de site Web avec Wordpress ou non.</p>
-
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-                <img src="./img/skills/skill.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block skill" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Boutique en ligne</h2>
-                <p class="lead text-center mt-0">Pour mettre en avant vos produits</p>
-                <p class="text-center">Création de boutique en ligne avec WooCommerce.</p>
-
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-                <img src="./img/skills/skill.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block skill" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Contenu numérique</h2>
-                <p class="lead text-center mt-0">Pour marquer vos clients</p>
-                <p class="text-center">Création de vidéos, d'illustrations ou d'infographies.</p>
-
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-                <img src="./img/skills/skill.jpg" class="img-fluid rounded-circle w-100 mx-auto d-block skill" alt="Laëtitia Doens" />
-                <h2 class="text-center mt-3 mb-0">Design graphique</h2>
-                <p class="lead text-center mt-0">Pour vous démarquer</p>
-                <p class="text-center">Création de charte graphique numérique</p>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<div class="container-fluid up" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
-
-    <div class="container content">
-
-        <h2 class="display-4 mb-5">Une équipe de confiance</h2>
-
-        <div id="carouselExampleControls" class="carousel slide mt-5" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <blockquote class="blockquote mb-0">
-                        <p>Voyages-SNCF.com à confié à Laetitia la conception et la réalisation de plus de 25 campagnes d’acquisition marketing entre 2012 et 2017. Dédiées à Voyages-SNCF.com ou co-brandées, ces campagnes ont permis au Groupe d'accroître, de qualifier et d’activer sa base de données, dans le plus grand respect de son image et de celle de ses partenaires. Laetitia a su être à l’écoute, réactive et force de proposition à chacun de nos briefs, et a mené d’une main de maître des campagnes qui pouvaient être particulièrement complexes. Son travail de grande qualité, sa disponibilité, et son relationnel franc et agréable ont largement contribué à la qualité de notre collaboration, et à la totale confiance que nous avons en elle sur la gestion de nos projets.</p>
-                        <footer class="blockquote-footer">Géraldine Arrault de Nayer <cite title="Source Title">Responsable Marketing Relationnel chez Voyages-sncf.com</cite></footer>
-                    </blockquote>
+                <div class="uk-display-block uk-transition-toggle uk-border-circle uk-overflow-hidden avatar">
+                    <img src="./img/partners/laetitia.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="Laëtitia Doens" />
                 </div>
-                <div class="carousel-item">
+                <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge uk-text-center team">
+
+                    <div class="team-title uk-margin-medium-bottom">
+                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Laëtitia DOENS</h3>
+                        <p class="uk-text-small uk-margin-remove-top">Conseillère en Marketing digital</p>
+                    </div>
+
+                    <p class="uk-text-justify">15 ans d'expérience en Trade Marketing et Performance Digitale, 10 ans de conseil dans les secteurs de l'e-commerce, de la distribution et des marques. Gestion des budgets Agences, Retail & Grande Distribution.</p>
+                </div>
+
+            </div>
+
+            <div class="uk-width-1-1 uk-width-1-2@m" uk-scrollspy="cls:uk-animation-slide-right">
+
+                <div class="uk-display-block uk-transition-toggle uk-border-circle uk-overflow-hidden avatar">
+                    <img src="./img/partners/alexis.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="Alexis Colombo" />
+                </div>
+                <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge uk-text-center team">
+
+                    <div class="team-title uk-margin-medium-bottom">
+                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Alexis COLOMBO</h3>
+                        <p class="uk-text-small uk-margin-remove-top">Développeur et graphiste digital</p>
+                    </div>
+
+                    <p class="uk-text-justify">Il y a 10 ans, j'entame de front une carrière d'<strong>auteur de bandes-dessinées</strong> et de <strong>graphiste</strong> en communication.</p>
+                    <p class="uk-text-justify">Après 3 albums sortis en librairie, j’allie ces deux compétences en travaillant dans le monde du <strong>jeu web</strong>. J’alimente mon expérience en créant diverses <strong>chartes graphiques</strong> et <strong>illustrations</strong>. Je profite d'opportunités liées à ce domaine pour me former au <strong>motion-design</strong> et proposer à mes clients des <strong>vidéos</strong> dynamiques et accrocheuses.</p>
+                    <p class="uk-text-justify">Ma rencontre et ma collaboration étroite avec un leader du jeu marketing digital me permet d’augmenter mes compétences, notamment en <strong>intégration</strong> et en <strong>développement web</strong> mais aussi en <strong>conduite de projet</strong>.</p>
+                    <p class="uk-text-justify">Autodidacte et curieux par nature, je me forme au grès des demandes et des nouveaux projets.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="uk-section white-section" uk-scrollspy="cls:uk-animation-slide-bottom">
+
+    <div class="uk-container">
+
+        <h2 class="uk-heading-divider blue">Une équipe de confiance</h2>
+
+        <div class="slider uk-visible-toggle">
+
+            <div class="uk-card uk-card-body slide">
+                <div class="uk-grid" uk-grid>
+                    <div class="uk-width-1-1 uk-width-2-3@m">
+                        <div class="quote">
+                            <p class="uk-text-justify quote-content">Voyages-SNCF.com à confié à Laetitia la conception et la réalisation de plus de 25 campagnes d’acquisition marketing entre 2012 et 2017. Dédiées à Voyages-SNCF.com ou co-brandées, ces campagnes ont permis au Groupe d'accroître, de qualifier et d’activer sa base de données, dans le plus grand respect de son image et de celle de ses partenaires. Laetitia a su être à l’écoute, réactive et force de proposition à chacun de nos briefs, et a mené d’une main de maître des campagnes qui pouvaient être particulièrement complexes. Son travail de grande qualité, sa disponibilité, et son relationnel franc et agréable ont largement contribué à la qualité de notre collaboration, et à la totale confiance que nous avons en elle sur la gestion de nos projets.</p>
+                            <p class="uk-text-meta"><span class="uk-text-bold">Géraldine Arrault de Nayer</span> Responsable Marketing Relationnel chez Voyages-sncf.com</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-1 uk-width-1-3@m">
+                        <img src="./img/clients/sncf.png" alt="Voyages SNCF" class="uk-responsive-width">
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-body slide">
+                <div class="uk-grid" uk-grid>
+                    <div class="uk-width-1-1 uk-width-2-3@m">
+                        <div class="quote">
+                            <p class="uk-text-justify quote-content">Dans le cadre de la mise en place de la politique CRM de Cdiscount, Laetitia, en tant que responsable marketing de l’univers Informatique, a su être à la fois à l’écoute et force de proposition dans la définition de la stratégie, des contenus et de la segmentation des campagnes.<br /> Son analyse post campagne axée sur le ROI couplée avec l’analyse customer centrics du pôle CRM nous a permis d’améliorer de manière significative les performances des campagnes et surtout de déployer la stratégie CRM au sein de tous les univers produits de Cdiscount.<br /> Bien que notre vision et nos objectifs aient parfois été divergents, Laetitia a à la fois fait preuve de confiance et a utilisé ses compétences commerciales et marketing pour mener à bien ce projet transversal novateur.<br /> Je garde un excellent souvenir, tant professionnel qu’humain, des années de collaboration avec Laetitia.</p>
+                            <p class="uk-text-meta"><span class="uk-text-bold">Carole BARRIERE</span> CRM & Traffic manager chez Éminence</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-1 uk-width-1-3@m">
+                        <img src="./img/clients/sncf.png" alt="Voyages SNCF" class="uk-responsive-width">
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="carousel-item">
                     <blockquote class="blockquote mb-0">
-                        <p>Dans le cadre de la mise en place de la politique CRM de Cdiscount, Laetitia, en tant que responsable marketing de l’univers Informatique, a su être à la fois à l’écoute et force de proposition dans la définition de la stratégie, des contenus et de la segmentation des campagnes.<br /> Son analyse post campagne axée sur le ROI couplée avec l’analyse customer centrics du pôle CRM nous a permis d’améliorer de manière significative les performances des campagnes et surtout de déployer la stratégie CRM au sein de tous les univers produits de Cdiscount.<br /> Bien que notre vision et nos objectifs aient parfois été divergents, Laetitia a à la fois fait preuve de confiance et a utilisé ses compétences commerciales et marketing pour mener à bien ce projet transversal novateur.<br /> Je garde un excellent souvenir, tant professionnel qu’humain, des années de collaboration avec Laetitia.</p>
-                        <footer class="blockquote-footer">Carole BARRIERE <cite title="Source Title">CRM & Traffic manager chez Éminence</cite></footer>
+                        <p></p>
+                        <footer class="blockquote-footer"> <cite title="Source Title"></cite></footer>
                     </blockquote>
                 </div>
                 <div class="carousel-item">
@@ -178,91 +141,75 @@
                         <p>Laetitia est une grande professionnelle du marketing qui sait s'adapter aux besoins de son interlocuteur et trouver pour lui des solutions adaptées dans un cadre défini en dépassant ses domaines de compétences propres.<br /> Travailler avec Laetitia est un plaisir et un réel confort.</p>
                         <footer class="blockquote-footer">Berenguier Loic <cite title="Source Title">Directeur Marketing et Communication</cite></footer>
                     </blockquote>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+                </div>-->
+
         </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.slider').slick({
+                //setting-name: setting-value
+                  autoplay: true,
+                  prevArrow: '<a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-previous></a>',
+                  nextArrow: '<a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-next></a>'
+              });
+            });
+        </script>
+
+
+    </div>
+</div>
+
+<div class="uk-section big-blue uk-box-shadow-large uk-box-shadow-hover-xlarge" uk-scrollspy="cls:uk-animation-slide-bottom">
+
+    <div class="uk-container">
+
+        <h2 class="uk-text-center uk-heading-primary">"Nous mettons un point d’honneur à garder des relations humaines dans nos collaborations professionnelles"</h2>
 
     </div>
 
 </div>
 
-<div class="container-fluid" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+<div class="uk-section" uk-scrollspy="cls:uk-animation-slide-bottom">
 
-    <div class="container content">
+    <div class="uk-container">
 
-        <h2 class="display-4 mb-5">Nos secrets</h2>
+        <h2 class="uk-heading-divider white">Notre secret ?</h2>
 
-        <div class="row mt-5">
+        <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge">
 
-            <div class="col-sm-12 col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
-
-                <ul class="list-group">
-                    <li class="list-group-item"><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="white lead">Notre expertise :</span> forgé par une expérience de 10 ans auprès de grands comptes.</li>
-                    <li class="list-group-item"><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="white lead">Notre ponctualité :</span> grâce à une gestion de projet réglé à la seconde près !</li>
-                    <li class="list-group-item"><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="white lead">Nos conseils :</span> basés sur notre expérience et notre veille numérique.</li>
-                    <li class="list-group-item"><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="white lead">Notre bonne humeur :</span> parce qu'on est SYMPA !</li>
-                </ul>
-
-            </div>
-
-            <div class="col-sm-12 col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
-
-                <div class="card">
-
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="./img/clients/actiplay.png" alt="Actiplay" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/clients/fcm.png" alt="FCM" class="d-block w-100">
-                        </div>
-                            <div class="carousel-item">
-                            <img src="./img/clients/aitec.png" alt="FCM" class="d-block w-100">
-                        </div>
-                            <div class="carousel-item">
-                            <img src="./img/clients/castleprod.png" alt="FCM" class="d-block w-100">
-                        </div>
-                            <div class="carousel-item">
-                            <img src="./img/clients/ludospherik.png" alt="FCM" class="d-block w-100">
-                        </div>
-                            <div class="carousel-item">
-                            <img src="./img/clients/faral.png" alt="FCM" class="d-block w-100">
-                        </div>
-                             <div class="carousel-item">
-                            <img src="./img/clients/ndc.png" alt="FCM" class="d-block w-100">
-                        </div>
-                             <div class="carousel-item">
-                            <img src="./img/clients/ysandel.png" alt="FCM" class="d-block w-100">
-                        </div>
-                             <div class="carousel-item">
-                            <img src="./img/clients/histoiresdelle.png" alt="FCM" class="d-block w-100">
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-2 uk-width-1-4@m">
+                    <div class="team-title uk-margin-small-bottom">
+                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Notre expertise</h3>
                     </div>
-
+                    <p>forgé par une expérience de 10 ans auprès de grands comptes.</p>
                 </div>
-
+                <div class="uk-width-1-2 uk-width-1-4@m">
+                    <div class="team-title uk-margin-small-bottom">
+                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Notre ponctualité</h3>
+                    </div>
+                    <p>grâce à une gestion de projet réglé à la seconde près !</p>
+                </div>
+                <div class="uk-width-1-2 uk-width-1-4@m">
+                    <div class="team-title uk-margin-small-bottom">
+                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Nos conseils</h3>
+                    </div>
+                    <p>basés sur notre expérience et notre veille numérique.</p>
+                </div>
+                <div class="uk-width-1-2 uk-width-1-4@m">
+                    <div class="team-title uk-margin-small-bottom">
+                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Notre bonne humeur</h3>
+                    </div>
+                    <p>parce qu'on est SYMPA !</p>
+                </div>
             </div>
 
         </div>
-        </div>
+
 
     </div>
 
 </div>
+
+

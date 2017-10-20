@@ -18,6 +18,10 @@ Commun
     color: white;
 }
 
+.white-section {
+    background-color: white;
+}
+
 body {
     background: url('../img/bg.jpg') top center no-repeat @orange;
     background-attachment: fixed;
@@ -34,6 +38,10 @@ h4 {
     color: #ffffff;
 }
 
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -43,15 +51,23 @@ h4 {
     background: none;
 }
 
-#breadcrumb {
+.breadcrumb {
     background-color: @blue;
+    padding-bottom: 90px;
+    position: relative;
+    z-index: 10;
+    h1 {
+        font-weight: 100;
+    }
     &:after {
         content: '';
         width: 100%;
-        background: url("../img/breadcrumb-icon.png") top center no-repeat;
-        height: 81px;
+        background: url(../img/breadcrumb-icon.png) top center no-repeat;
+        background-size: contain;
+        height: 60px;
         position: absolute;
         z-index: 20;
+        bottom: -30px;
     }
 }
 
@@ -82,22 +98,11 @@ h4 {
 
 .big-blue {
     background-color: @blue;
-    .box-shadow(0px 0px 8px);
+    position: relative;
     z-index: 10;
-    .uk-button {
-        background-color: #ffffff;
-        .rounded(5px);
-        color: @blue;
-        text-transform: uppercase;
-        border: 2px solid @blue;
-        .transition-duration(0.5s);
-        max-width: 150px;
-        &:hover,
-        &:focus {
-            background: @blue;
-            color: #ffffff;
-            border-color: #ffffff;
-        }
+    h2 {
+        font-weight: 100;
+        font-size: 3rem;
     }
 }
 
@@ -112,6 +117,18 @@ h4 {
     }
 }
 
+.uk-button-primary, .uk-icon-button {
+    color: #fff;
+    background-color: @orange;
+    border-color: @orange;
+    .transition-duration(0.5s);
+    &:hover, &:focus {
+        background-color: @blue;
+        border-color: @blue;
+        color:white;
+    }
+}
+
 #wide {
     padding: 0;
 }
@@ -121,6 +138,26 @@ a {
 
     &:hover {
         color: @blue;
+    }
+}
+
+.uk-heading-divider {
+    border-bottom: 2px solid #e5e5e5;
+
+    &.blue {
+        border-color: @orange;
+    }
+
+    &.white {
+        border-color: white;
+    }
+}
+
+.quote {
+    border-left: 5px solid @orange;
+    padding:0 25px;
+    .quote-content {
+        font-style: italic;
     }
 }
 
@@ -169,7 +206,20 @@ Header
     padding-top: 40px;
 }
 
-.uk-navbar-nav>li>a {
+#web-nav {
+        margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+#mobile-nav {
+    background-color: @blue;
+    .uk-navbar-toggle {
+        height:35px;
+        color:white;
+    }
+}
+
+.uk-navbar-nav>li>a, .uk-nav-default>li>a {
     color:@blue;
     text-transform: capitalize;
     .transition-duration(0.5s);
@@ -178,7 +228,15 @@ Header
     margin: 0 15px;
 }
 
-.uk-navbar-nav>li.uk-active>a {
+.uk-nav-default>li>a {
+    color:white;
+}
+
+.uk-nav-default>li>a {
+    height:25px;
+}
+
+.uk-navbar-nav>li.uk-active>a, .uk-nav-default>li.uk-active>a {
     /*background-color: @orange;*/
     border-bottom: 2px solid @orange;
     color: @orange;
@@ -193,7 +251,7 @@ Header
     background: url(../img/arrow.png) top center no-repeat;
     background-size: cover;
     height: 40px;
-    z-index: 40;
+    z-index: 20;
     position: relative;
 }
 
@@ -201,13 +259,59 @@ Header
     z-index: 3000;
 }
 
+.uk-sticky-fixed {
+    width:100% !important;
+}
+
 /***********************************************************************************************************************
 Home
 ***********************************************************************************************************************/
 
 #intro {
+    background-color: @blue;
     padding: 0;
     margin: 0 0 -1px 0;
+}
+
+.team {
+    padding-top: 140px;
+}
+
+.avatar {
+    margin: auto;
+    margin-bottom: -110px;
+    z-index: 1;
+    position: relative;
+    border:5px solid @blue;
+    width: 100%;
+    max-width: 250px !important;
+}
+
+.team-title {
+    position: relative;
+    margin: auto;
+    width:100%;
+    max-width: 265px;
+
+    &:before,
+    &:after {
+        content: "";
+        width: 5px;
+        height: 100%;
+        border: 2px solid @orange;
+        border-right: none;
+        position: absolute;
+        display: block;
+        margin-left: -10px;
+    }
+
+    &:after {
+        border: 2px solid @orange;
+        border-left: none;
+        top: 0;
+        right: -10px;
+
+    }
 }
 
 .list-group-item {
@@ -225,9 +329,28 @@ Home
     max-width: 225px;
 }
 
+.slider {
+    position:relative;
+
+    .uk-slidenav {
+        z-index: 50;
+    }
+}
+
 /***********************************************************************************************************************
 Portfolio
 ***********************************************************************************************************************/
+
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 25%; }
+/* 2 columns */
+/*.grid-item--width2 { width: 40%; }*/
+
+.uk-overlay-primary {
+    background: @orange;
+}
+
 
 figure {
     background-color: #ffffff;
@@ -312,6 +435,8 @@ Footer
 
 .footer-bottom {
     background-color: #000000;
+    padding-top: 10px;
+        padding-bottom: 5px;
     p {
         color: rgba(255, 255, 255, 0.6);
         &:before {
@@ -386,4 +511,7 @@ Media queries
     .web {
         display: none;
     }
+
+    .grid-sizer,
+    .grid-item { width: 50%; }
 }

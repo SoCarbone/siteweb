@@ -1,65 +1,75 @@
-<div class="container-fluid pt-5 pb-5" id="breadcrumb">
+<div class="uk-section breadcrumb" uk-scrollspy="cls:uk-animation-slide-bottom">
 
-    <div class="container pt-4 pb-4">
+    <div class="uk-container">
 
-        <h1 class="text-center display-4" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:'500'}">Contactez moi !</h1>
+        <h1 class="uk-text-center uk-lead">Contactez-nous !</h1>
 
     </div>
 
 </div>
 
-<div class="container-fluid">
+<div class="uk-section">
 
-    <div class="container content">
+    <div class="uk-container">
 
-        <div class="row">
+        <div class="uk-grid" uk-grid>
 
-            <div class="col-sm-12 col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:'500'}">
+            <div class="uk-width-1-1 uk-width-1-2@m" uk-scrollspy="cls:uk-animation-slide-left">
 
-                <h2 class="mb-3">Par mail</h2>
-                <div class="card">
+                <h2 class="">Par mail</h2>
+                <div class="uk-card uk-card-default uk-card-body">
 
-                    <form id="contact" method="post" action="contact.html">
+                    <form id="contact" method="post" action="contact.html" class="uk-form-stacked">
 
                         <?php if(isset($final_message)) { echo $final_message; } ?>
 
-                        <fieldset data-uk-margin>
-                            <div class="form-group">
-                                <label for="lastname">Votre nom*</label>
-                                <input type="text" class="form-control" id="lastname" aria-describedby="lastname" name="lastname" placeholder="Entrez votre nom" value="<?php echo stripslashes($lastname) ?>" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="firstname">Votre prénom*</label>
-                                <input type="text" class="form-control" id="firstname" aria-describedby="firstname" name="firstname" placeholder="Entrez votre prénom" value="<?php echo stripslashes($firstname) ?>" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="company">Votre société*</label>
-                                <input type="text" class="form-control" id="company" aria-describedby="company" name="company" placeholder="Entrez le nom de votre société" value="<?php echo stripslashes($company) ?>" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="function">Votre fonction</label>
-                                <input type="text" class="form-control" id="function" aria-describedby="function" name="function" placeholder="Entrez votre fonction" value="<?php echo stripslashes($function) ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Votre téléphone</label>
-                                <input type="phone" class="form-control" id="phone" aria-describedby="phone" name="phone" placeholder="Entrez votre téléphone" value="<?php echo stripslashes($phone) ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Votre email*</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Entrez votre email" value="<?php echo stripslashes($email) ?>" required>
-                            </div>
-                            <div class="form-group mb-0">
-                                <label for="content">Votre demande*</label>
-                                <textarea class="form-control" placeholder="Entrez votre message" id="content" name="content" value="" tabindex="4" required><?php echo stripslashes($content) ?></textarea>
-                            </div>
-                            <small>*Champ obligatoire</small>
 
-                        </fieldset>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="lastname">Votre nom*</label>
+                                <div class="uk-form-controls">
+                                    <input type="text" class="uk-input" id="lastname" aria-describedby="lastname" name="lastname" placeholder="Entrez votre nom" value="<?php echo stripslashes($lastname) ?>" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="firstname">Votre prénom*</label>
+                                    <input type="text" class="uk-input" id="firstname" aria-describedby="firstname" name="firstname" placeholder="Entrez votre prénom" value="<?php echo stripslashes($firstname) ?>" required>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="company">Votre société*</label>
+                                <div class="uk-form-controls">
+                                    <input type="text" class="uk-input" id="company" aria-describedby="company" name="company" placeholder="Entrez le nom de votre société" value="<?php echo stripslashes($company) ?>" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="function">Votre fonction</label>
+                                <div class="uk-form-controls">
+                                    <input type="text" class="uk-input" id="function" aria-describedby="function" name="function" placeholder="Entrez votre fonction" value="<?php echo stripslashes($function) ?>">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="phone">Votre téléphone</label>
+                                <div class="uk-form-controls">
+                                    <input type="phone" class="uk-input" id="phone" aria-describedby="phone" name="phone" placeholder="Entrez votre téléphone" value="<?php echo stripslashes($phone) ?>">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="email">Votre email*</label>
+                                <div class="uk-form-controls">
+                                    <input type="email" class="uk-input" id="email" aria-describedby="email" name="email" placeholder="Entrez votre email" value="<?php echo stripslashes($email) ?>" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin uk-margin-remove-bottom">
+                                <label class="uk-form-label" for="content">Votre demande*</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" placeholder="Entrez votre message" id="content" name="content" value="" rows="5" required><?php echo stripslashes($content) ?></textarea>
+                                </div>
+                            </div>
+                            <p class="uk-text-small uk-margin-remove-top">*Champ obligatoire</p>
 
                         <div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 
-                        <div class="form-group">
-                            <button type="submit" name="envoi" class="btn btn-primary">Envoyer le formulaire !</button>
+                        <div class="uk-form-controls">
+                            <button type="submit" name="envoi" class="uk-button uk-button-primary">Envoyer le formulaire !</button>
                         </div>
 
                     </form>
@@ -68,52 +78,32 @@
 
             </div>
 
-            <div class="col-sm-12 col-md-6" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:'500'}">
+            <div class="uk-width-1-1 uk-width-1-2@m" uk-scrollspy="cls:uk-animation-slide-right">
 
-                <h2 class="mb-3">Par téléphone</h2>
+                <h2 class="">Par téléphone</h2>
 
-                <div class="row">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3 class="uk-card-title uk-heading-divider blue uk-margin-remove-bottom">Alexis COLOMBO</h3>
+                    <p class="uk-margin-remove-top">Contact Avignon et sud-est</p>
 
-                    <div class="col-sm-6 col-md-12 mb-4">
+                    <p class=""><span uk-icon="icon: phone"></span> +33 (0)6 02 71 11 50</p>
 
-                        <div class="card contact">
-                            <div class="card-body name">
-                                <p class="card-text">Contact Avignon et sud-est</p>
-                                <h4 class="card-title blue">Alexis COLOMBO</h4>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">06 02 71 11 50</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://www.linkedin.com/in/alexiscolombo/" target="_blank" class="btn btn-primary rounded-circle btn-social" data-toggle="tooltip" data-placement="right" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="https://www.facebook.com/colomboalexis" target="_blank" class="btn btn-primary rounded-circle btn-social" data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-
+                    <div class="">
+                        <a href="https://www.linkedin.com/in/alexiscolombo/" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: linkedin"></a>
+                        <a href="https://www.facebook.com/colomboalexis" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
                     </div>
-
-                    <!--<div class="col-sm-6 col-md-12">
-
-                        <div class="card contact">
-                            <div class="card-body name">
-                                <p class="card-text">Contact Bordeaux et sud-ouest</p>
-                                <h4 class="card-title blue">Laëtitia DOENS</h4>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">06 00 00 00 00</li>
-                            </ul>
-                            <div class="card-body">
-                                <a href="https://www.linkedin.com/in/laetitia-doens-16a97066/" target="_blank" class="btn btn-primary rounded-circle btn-social" data-toggle="tooltip" data-placement="right" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-
-                    </div>-->
-
                 </div>
 
-                <!--<p>Réservez moi sur <a href="https://www.hopwork.fr/profile/alexiscolombo" target="_blank">Hopwork</a> ou sur <a href="https://www.404works.com/profil/alexisc" target="_blank">404Works</a> !</p>-->
+                <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+                    <h3 class="uk-card-title uk-heading-divider blue uk-margin-remove-bottom">Laëtitia DOENS</h3>
+                    <p class="uk-margin-remove-top">Contact Bordeaux et sud-ouest</p>
 
-                <!--<img src="./img/crasy-work.png" alt="Graphiste POLYMORPHE freelance" class="uk-align-center uk-margin-large-top" />-->
+                    <p class=""><span uk-icon="icon: phone"></span> +33 (0)6 21 90 42 73</p>
+
+                    <div class="">
+                        <a href="https://www.linkedin.com/in/laetitia-doens-16a97066/" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: linkedin"></a>
+                    </div>
+                </div>
 
             </div>
 
