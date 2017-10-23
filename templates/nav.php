@@ -11,14 +11,23 @@
     </div>
 </div>
 
-<div id="nav-container" uk-sticky>
+<div id="nav-container">
 
     <div class="uk-section nav" id="nav" >
         <div class="uk-container">
 
-            <div class="uk-flex uk-flex-center uk-margin-bottom">
+            <div class="uk-flex uk-flex-center uk-margin-bottom uk-margin-top">
                 <a href="home.html"><img src="./img/logo.png" class="uk-responsive-width" id="logo" alt="logo Alexis Colombo" uk-scrollspy="cls:uk-animation-slide-top"/></a>
             </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="nav-container" uk-sticky>
+
+    <div class="uk-section nav" id="nav" >
+        <div class="uk-container">
 
             <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" id="web-nav" uk-navbar uk-scrollspy="cls:uk-animation-slide-bottom, delay:500">
                 <div class="uk-navbar-center">

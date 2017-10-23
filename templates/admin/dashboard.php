@@ -1,11 +1,11 @@
-<div class="container-fluid" id="section">
+<div class="uk-section">
 
-    <h2 class="text-center">Tableau de bord</h2>
+    <h2 class="uk-text-center">Tableau de bord</h2>
 
-    <h3>Données du site</h3>
+    <!--<h3>Données du site</h3>
 
-    <div class="row">
-        <div class="col-sm-3">
+    <div class="uk-grid" uk-grid>
+        <div class="uk-width-1-4">
             <div class="card">
                 <div class="card-body">
                     <p class="number text-center"><?php echo $items_number ?></p>
@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="uk-width-1-4">
             <div class="card">
                 <div class="card-body">
                     <p class="number text-center"><?php echo $posts_number ?></p>
@@ -28,27 +28,27 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
-    <h3 class="mt-5">Données des visiteurs</h3>
+    <h3 class="uk-margin-large-top">Données des visiteurs</h3>
 
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="card-body">
-                    <p class="number text-center"><?php echo $visitors_number ?></p>
-                    <h3 class="text-center">visiteur<?php if($visitors_number > 1 ){ echo 's'; }?> unique<?php if($visitors_number > 1 ){ echo 's'; }?></h3>
+    <div class="uk-grid" uk-grid>
+        <div class="uk-width-1-4">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-body">
+                    <p class="number uk-text-center"><?php echo $visitors_number ?></p>
+                    <h3 class="uk-text-center blue">visiteur<?php if($visitors_number > 1 ){ echo 's'; }?> unique<?php if($visitors_number > 1 ){ echo 's'; }?></h3>
                 </div>
             </div>
         </div>
 
-        <div class="col">
+        <!--<div class="uk-width-1-4">
             <div class="card">
                 <div class="card-body">
                     <?php var_dump($screens_list); ?>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 
 </div>

@@ -199,7 +199,7 @@ Header
   background-color: #ffffff;
   padding: 10px 0;
   z-index: 40;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
 }
 #web-nav {
   margin-bottom: 15px;
@@ -469,4 +469,23 @@ Media queries
   .grid-item {
     width: 50%;
   }
+}
+/***********************************************************************************************************************
+Admin
+***********************************************************************************************************************/
+#left-nav {
+  background-color: #372f8c;
+}
+#left-nav li a {
+  /*background-color: @darken_3;*/
+  color: white;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  margin-bottom: 5px;
+}
+#left-nav li a:hover {
+  color: #f57f17;
+  /*background-color: @darken_1;*/
 }

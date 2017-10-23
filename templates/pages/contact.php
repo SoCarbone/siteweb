@@ -2,7 +2,7 @@
 
     <div class="uk-container">
 
-        <h1 class="uk-text-center uk-lead">Contactez-nous !</h1>
+        <h1 class="uk-text-center uk-lead">Demande de devis</h1>
 
     </div>
 

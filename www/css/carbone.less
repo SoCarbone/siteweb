@@ -203,7 +203,7 @@ Header
     background-color: #ffffff;
     padding: 10px 0;
     z-index: 40;
-    padding-top: 40px;
+    /*padding-top: 40px;*/
 }
 
 #web-nav {
@@ -514,4 +514,22 @@ Media queries
 
     .grid-sizer,
     .grid-item { width: 50%; }
+}
+
+/***********************************************************************************************************************
+Admin
+***********************************************************************************************************************/
+
+#left-nav {
+    background-color: @blue;
+    li a {
+    /*background-color: @darken_3;*/
+    color: white;
+    .transition-duration(0.5s);
+    margin-bottom: 5px;
+        &:hover {
+            color:@orange;
+            /*background-color: @darken_1;*/
+        }
+    }
 }

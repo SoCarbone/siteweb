@@ -8,6 +8,7 @@ if ($_SERVER['REMOTE_ADDR'] != $ip AND $maintenance == true){
 else
 {
     include_once('../templates/header.php');
+    include_once('../templates/nav.php');
 
     if (isset($_GET['page']))
     {

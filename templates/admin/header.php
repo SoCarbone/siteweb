@@ -19,27 +19,4 @@
 
 <body>
 
-<div class="container-fluid p-0 h-100"><!--Début du contenu-->
 
-    <div class="row no-gutters h-100">
-
-        <div class="col-2 h-100 d-inline-block" id="left-nav"><!--Menu latéral gauche-->
-
-            <h2 class="text-center"><?php echo $site_name; ?></h2>
-            <p class="text-center mb-4">Administration</p>
-
-            <ul class="nav nav-pills nav-fill flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="admin.php">Tabelau de bord</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="admin.php?page=portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="admin.php?page=blog">Blog</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="col" id="content"><!--Début de la zone d'administration-->

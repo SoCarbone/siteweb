@@ -51,3 +51,7 @@ function Screen()
     $screen='<script type="text/javascript">document.write(""+screen.width+"*"+screen.height+"");</script>';
     return $screen;
 }
+
+include_once('model_team.php');
+include_once('model_recommendations.php');
+include_once('model_secrets.php');

@@ -23,23 +23,23 @@ else {
     $pass = 'BebetaPoil42';
 }
 
-$author = 'Alexis Colombo - Créateur NUM&Eacute;RIQUE - www.alexiscolombo.fr';
+$author = 'Alexis Colombo et Laëtitia Doens - Créateurs digital - www.alexiscolombo.fr';
 //$site_url = 'http://localhost/alexiscolombo/www/';
 $site_url = 'http://www.alexiscolombo.fr';
 
 // Données SEO des pages. Ne mettre que les données spécifiques, les pages sans importance prendront $site_title ou $description_title
-$site_name = 'Alexis Colombo';
+$site_name = 'Alexis  et Laëtitia';
 $site_title = array (
-    "default" => $site_name . ' - Créateur NUM&Eacute;RIQUE à Orange, Avignon et Carpentras',
-    "portfolio" => $site_name . ' - Mes travaux de Créateur NUM&Eacute;RIQUE freelance',
-    "contact" => $site_name . ' - Contactez un Créateur NUM&Eacute;RIQUE freelance'
+    "default" => $site_name . ' - Créateurs digital à Bordeaux et Avignon',
+    "portfolio" => $site_name . ' - Nos créations digital',
+    "contact" => $site_name . ' - Demandez un devis'
 );
 
 $site_description = array (
-    "default" => 'Je suis un Graphiste Illustrateur, Intégrateur web et Développeur PHP freelance, basé dans le triangle Orange, Avignon, Carpentras.',
-    "portfolio" => 'Une agence de communication doit savoir s’entourer de spécialistes tel qu\'un Créateur NUM&Eacute;RIQUE freelance.'
+    "default" => 'Créateurs de site web et de contenus digital à Bordeaux et Avignon',
+    /*"portfolio" => 'Une agence de communication doit savoir s’entourer de spécialistes tel qu\'un Créateur NUM&Eacute;RIQUE freelance.'*/
 );
 
 $site_keywords = array (
-    "default" => 'graphiste, graphiste freelance, freelance, agence de communication, graphisme, illustration, motion-design, webdesign, sites, vidéos, intégration, développement, HTML, CSS, PHP',
+    "default" => 'marketing, gestiopn de projet, siteweb, jeux marketing, gameplay, wordpress, woocommerce, baniières promotionnelles, mailing, newsletter, mascotte, logo, graphiste, graphiste freelance, freelance, agence de communication, graphisme, illustration, motion-design, webdesign, sites, vidéos, intégration, développement, HTML, CSS, PHP',
 );

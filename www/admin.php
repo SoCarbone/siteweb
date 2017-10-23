@@ -1,5 +1,7 @@
 <?php
-include_once('../templates/admin/header.php');
+include_once('../templates/pre_header.php');
+include_once('../templates/header.php');
+include_once('../templates/admin/navbar.php');
 
 if (isset($_GET['page']))
 {

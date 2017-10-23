@@ -107,5 +107,3 @@
 </head>
 
 <body>
-
-    <?php include_once('../templates/nav.php') ?>
