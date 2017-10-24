@@ -13,12 +13,13 @@ RewriteEngine on
 #--------------------------------------------------
 
 # Maintenance :
-#ErrorDocument 403 /maintenance.php 
-#deny from all 
-#allow from 90.118.100.4
-#<Files maintenance.php>
-#allow from all
-#</Files>
+ ErrorDocument 403 /maintenance.php 
+deny from all 
+allow from 77.136.41.126
+allow from 78.126.65.76
+<Files maintenance.php>
+allow from all
+</Files>
 
 # Pages :
 RewriteRule ^([a-zA-Z-]+).html$   index.php?page=$1 [L]

@@ -2,7 +2,7 @@
 
     <div class="uk-container">
 
-        <h1 class="uk-text-center uk-lead">Demande de devis</h1>
+        <h1 class="uk-text-center uk-lead">Un projet ? Contactez-nous et faisons connaissance !</h1>
 
     </div>
 
@@ -49,7 +49,7 @@
                             <div class="uk-margin">
                                 <label class="uk-form-label" for="phone">Votre téléphone</label>
                                 <div class="uk-form-controls">
-                                    <input type="phone" class="uk-input" id="phone" aria-describedby="phone" name="phone" placeholder="Entrez votre téléphone" value="<?php echo stripslashes($phone) ?>">
+                                    <input type="tel" class="uk-input" id="phone" aria-describedby="phone" name="phone" maxlength="10" placeholder="Entrez votre téléphone" value="<?php echo stripslashes($phone) ?>">
                                 </div>
                             </div>
                             <div class="uk-margin">

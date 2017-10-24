@@ -1,8 +1,9 @@
 <?php
-$prod = 'false';
+$prod = 'true';
 $maintenance = false;
 //$ip = '127.0.0.1'; //Ip local
-$ip = '2a01:cb1c:129:2f00:5d6d:c2f2:efdc:8efb'; //IP Courthézon
+$ip_alexis = '2a01:cb1c:129:2f00:5d6d:c2f2:efdc:8efb'; //IP Courthézon
+$ip_laetitia = '';
 
 // ReCaptcha
 $public_key = '6LfJIzQUAAAAAHZbS7nZYxbrMRDn43guWdRov4lv';
@@ -23,16 +24,25 @@ else {
     $pass = 'BebetaPoil42';
 }
 
+include_once('../model/db_connection.php');
+/*include_once('../model/model_config.php');
+$the_config = getConfig();
+
+foreach($the_config as $key => $config)
+{
+
+}*/
+
 $author = 'Alexis Colombo et Laëtitia Doens - Créateurs digital - www.alexiscolombo.fr';
 //$site_url = 'http://localhost/alexiscolombo/www/';
 $site_url = 'http://www.alexiscolombo.fr';
 
 // Données SEO des pages. Ne mettre que les données spécifiques, les pages sans importance prendront $site_title ou $description_title
-$site_name = 'Alexis  et Laëtitia';
 $site_title = array (
-    "default" => $site_name . ' - Créateurs digital à Bordeaux et Avignon',
-    "portfolio" => $site_name . ' - Nos créations digital',
-    "contact" => $site_name . ' - Demandez un devis'
+    "default" => 'Alexis et Laëtitia - Création digital à Bordeaux et Avignon',
+    "services" => 'Création de projets digitaux',
+    "portfolio" => 'Nos réalisations digitales',
+    "contact" => 'Contactez-nous pour faire un devis'
 );
 
 $site_description = array (

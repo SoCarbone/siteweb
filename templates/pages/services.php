@@ -21,7 +21,7 @@
                 ?>
                 <div class="uk-width-1-1 uk-width-1-3@m" uk-scrollspy="cls:uk-animation-slide-bottom">
 
-                    <div class="uk-display-block uk-transition-toggle uk-border-circle uk-overflow-hidden avatar">
+                    <div class="uk-display-block uk-transition-toggle icon-services">
                         <img src="./img/services/<?php echo $item['image_name']; ?>" class="uk-transition-scale-up uk-transition-opaque" alt="<?php echo $item['title']; ?>" />
                     </div>
                     <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge uk-text-center team">

@@ -8,8 +8,8 @@
         <div class="uk-width-1-4">
             <div class="card">
                 <div class="card-body">
-                    <p class="number text-center"><?php echo $items_number ?></p>
-                    <h3 class="text-center">projet<?php if($items_number > 1 ){ echo 's'; }?> dans portfolio</h3>
+                    <p class="number text-center"><?php //echo $items_number ?></p>
+                    <h3 class="text-center">projet<?php //if($items_number > 1 ){ echo 's'; }?> dans portfolio</h3>
                 </div>
                 <div class="card-body">
                     <a href="admin.php?page=portfolio" class="btn btn-dark">Gérer les projets</a>
@@ -20,7 +20,7 @@
         <div class="uk-width-1-4">
             <div class="card">
                 <div class="card-body">
-                    <p class="number text-center"><?php echo $posts_number ?></p>
+                    <p class="number text-center"><?php //echo $posts_number ?></p>
                     <h3 class="text-center">news dans le blog</h3>
                 </div>
                 <div class="card-body">
@@ -45,7 +45,7 @@
         <!--<div class="uk-width-1-4">
             <div class="card">
                 <div class="card-body">
-                    <?php var_dump($screens_list); ?>
+                    <?php //var_dump($screens_list); ?>
                 </div>
             </div>
         </div>-->

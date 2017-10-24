@@ -264,7 +264,8 @@ Home
 .team {
   padding-top: 140px;
 }
-.avatar {
+.avatar,
+.icon-services {
   margin: auto;
   margin-bottom: -110px;
   z-index: 1;
@@ -300,8 +301,7 @@ Home
   background: none;
   border: none;
 }
-.partners,
-.skill {
+.partners {
   max-width: 300px;
   border: 5px solid #372f8c;
 }
@@ -313,6 +313,13 @@ Home
 }
 .slider .uk-slidenav {
   z-index: 50;
+}
+/***********************************************************************************************************************
+Services
+***********************************************************************************************************************/
+.icon-services {
+  border: none;
+  max-width: 175px !important;
 }
 /***********************************************************************************************************************
 Portfolio
@@ -488,4 +495,7 @@ Admin
 #left-nav li a:hover {
   color: #f57f17;
   /*background-color: @darken_1;*/
+}
+#login {
+  height: 100vh;
 }

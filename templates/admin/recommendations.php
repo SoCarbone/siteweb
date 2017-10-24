@@ -2,7 +2,7 @@
 
     <div class="uk-container">
 
-        <h2 class="text-center">Gestion des recommendations</h2>
+        <h2 class="text-center">Gestion des recommandations</h2>
 
         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge">
 
@@ -10,7 +10,7 @@
             if(isset($_GET['modify']))
             {
                 ?>
-                <h3 class="uk-card-title blue">Modifier le recommendation de <?php echo $modify_item['name']; ?></h3>
+                <h3 class="uk-card-title blue">Modifier la recommandation de <?php echo $modify_item['name']; ?></h3>
                 <div class="">
 
                     <form method="post" name="add_project" action="admin.php?page=recommendations&itsmodify=true" enctype="multipart/form-data" class="uk-grid-small" uk-grid>
@@ -48,7 +48,7 @@
             {
             ?>
 
-            <h3 class="uk-card-title blue">Ajouter une recommendation</h3>
+            <h3 class="uk-card-title blue">Ajouter une recommandation</h3>
             <div class="">
 
                 <form method="post" name="add_recommendations" action="admin.php?page=recommendations&add=true" enctype="multipart/form-data" class="uk-grid-small" uk-grid>
@@ -109,7 +109,7 @@
                     <!--Modal de confirmation de suppression-->
                     <div id="delete-modal" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body">
-                            <h2 class="uk-modal-title blue">Etes vous sur de vouloir supprimer la recommendation de <?php echo $item['name']; ?> ?</h2>
+                            <h2 class="uk-modal-title blue">Etes vous sur de vouloir supprimer la recommandation de <?php echo $item['name']; ?> ?</h2>
                             <p class="uk-text-right">
                                 <a href="admin.php?page=recommendations&delete=<?php echo $item['id']; ?>" class="uk-button uk-button-danger" type="button">OUI</a>
                                 <button class="uk-button uk-button-secondary uk-modal-close" type="button">NON</button>

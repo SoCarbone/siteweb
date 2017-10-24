@@ -6,4 +6,4 @@ $posts_number = countPosts();
 
 $visitors_number = countVisitors();
 
-$screens_list = listScreens();
+/*$screens_list = listScreens();*/

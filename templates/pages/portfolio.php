@@ -2,7 +2,7 @@
 
     <div class="uk-container">
 
-        <h1 class="uk-text-center uk-lead">Nos réalisations de Créateurs digital</h1>
+        <h1 class="uk-text-center uk-lead">Découvrez nos réalisations</h1>
 
     </div>
 

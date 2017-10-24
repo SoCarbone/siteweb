@@ -5,7 +5,7 @@
 	********************************************************************************************
 */
 // destinataire est votre adresse mail. Pour envoyer à plusieurs à la fois, séparez-les par une virgule
-$destinataire = 'colombo.alexis@gmail.com, laetitia.doens@gmail.com'; //, laetitia.doens@gmail.com
+$destinataire = 'colombo.alexis@gmail.com'; //, laetitia.doens@gmail.com
 
 // copie ? (envoie une copie au visiteur)
 $copie = 'non';
@@ -21,7 +21,7 @@ $message_non_envoye = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-
 $no_human = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Vous n\'êtes pas humain !</p></div>';
 
 // Message d'erreur du formulaire
-$message_formulaire_invalide = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Vérifiez que tous les champs soient bien remplis et que l\'email soit sans erreur.</p></div>';
+$message_formulaire_invalide = '<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Vérifiez que tous les champs soient bien remplis et que l\'email ou le téléphone soit sans erreur.</p></div>';
 
 /*
 	********************************************************************************************
@@ -50,6 +50,12 @@ function Rec($text)
 function IsEmail($email)
 {
     $value = preg_match('/^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9_](?:[a-zA-Z0-9_\-](?!\.)){0,61}[a-zA-Z0-9_-]?\.)+[a-zA-Z0-9_](?:[a-zA-Z0-9_\-](?!$)){0,61}[a-zA-Z0-9_]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/', $email);
+    return (($value === 0) || ($value === false)) ? false : true;
+}
+
+function IsPhone($phone)
+{
+    $value = preg_match('#^0[1-68][0-9]{8}$#', $phone);
     return (($value === 0) || ($value === false)) ? false : true;
 }
 
@@ -86,6 +92,7 @@ $content = str_replace("&amp;","&",$content);
 
 // On va vérifier les variables et l'email ...
 $email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+$phone = (IsPhone($phone)) ? $phone : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
 $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si besoin
 
 if (isset($_POST['envoi']))
@@ -164,6 +171,10 @@ if (isset($_POST['envoi']))
         {
             $final_message = $message_non_envoye;
         }
+    }
+    else
+    {
+        $final_message = $message_formulaire_invalide;
     }
 }// fin du if (!isset($_POST['envoi']))
 

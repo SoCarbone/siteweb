@@ -19,7 +19,7 @@
 
     <div class="uk-container">
 
-        <h1 class="uk-text-center uk-lead">Tous les métiers du digital réunis en deux personnes.</h1>
+        <h1 class="uk-text-center uk-lead">Un duo d'expérience pour un projet digital harmonieux, détendez-vous !</h1>
 
     </div>
 
@@ -111,7 +111,7 @@
     </div>
 </div>
 
-<div class="uk-section big-blue uk-box-shadow-large uk-box-shadow-hover-xlarge" uk-scrollspy="cls:uk-animation-slide-bottom">
+<!--<div class="uk-section big-blue uk-box-shadow-large uk-box-shadow-hover-xlarge" uk-scrollspy="cls:uk-animation-slide-bottom">
 
     <div class="uk-container">
 
@@ -119,7 +119,7 @@
 
     </div>
 
-</div>
+</div>-->
 
 <div class="uk-section" uk-scrollspy="cls:uk-animation-slide-bottom">
 

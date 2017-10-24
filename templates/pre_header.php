@@ -6,7 +6,6 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $browser = $_SERVER['HTTP_USER_AGENT'];
 
 include_once('../config/config.php');
-include_once('../model/db_connection.php');
 
 /*date_default_timezone_set('Europe/Paris');
 $today = date("Y-m-d H:i:s");
