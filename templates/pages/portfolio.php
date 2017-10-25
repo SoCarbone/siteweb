@@ -8,7 +8,7 @@
 
 </div>
 
-<div class="uk-section" id="wide" uk-scrollspy="cls:uk-animation-fade; delay:1000">
+<div class="uk-section" id="wide" uk-scrollspy="cls:uk-animation-fade; delay:1500">
     <div class="grid">
         <!-- width of .grid-sizer used for columnWidth -->
         <div class="grid-sizer"></div>
@@ -37,15 +37,14 @@
                                     <h1 class="blue uk-margin-remove-bottom"><?php echo $item['title']; ?></h1>
                                     <p class="uk-margin-remove-top uk-text-lead"><?php echo $item['description']; ?></p>
                                     <p><?php echo $item['method']; ?></p>
+                                    <?php if(!empty($item['video']))
+                                    { ?>
+                                        <iframe src="<?php echo $item['video']; ?>" width="550" height="310" frameborder="0" allowfullscreen uk-responsive uk-video></iframe>
+                                    <?php } ?>
                                 </div>
-                                <?php if(!empty($item['video']))
-                                { ?>
-                                    <div class="uk-cover-container uk-width-1-1 uk-width-2-3@m" uk-height-viewport><iframe src="<?php echo $item['video']; ?>" width="" height="" frameborder="0" allowfullscreen uk-cover></iframe></div>
-                                <?php }
-                                else
-                                { ?>
-                                    <div class="uk-background-cover uk-width-1-1 uk-width-2-3@m" style="background-image: url('./img/portfolio/<?php echo $item['image_name']; ?>');" uk-height-viewport></div>
-                                <?php } ?>
+
+                                <div class="uk-background-cover uk-width-1-1 uk-width-2-3@m" style="background-image: url('./img/portfolio/<?php echo $item['image_name']; ?>');" uk-height-viewport></div>
+
                             </div>
                         </div>
                     </div>

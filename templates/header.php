@@ -94,6 +94,7 @@
 
     <!--Masonry-->
     <script type="text/javascript" src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <!--My CSS-->
     <link rel="stylesheet" href="css/carbone.css" />

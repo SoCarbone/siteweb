@@ -19,7 +19,7 @@
 
     <div class="uk-container">
 
-        <h1 class="uk-text-center uk-lead">Un duo d'expérience pour un projet digital harmonieux, détendez-vous !</h1>
+        <h1 class="uk-text-center uk-lead">Un duo d'expérience <br class="uk-visible@m" />pour un projet digital harmonieux</h1>
 
     </div>
 
@@ -67,7 +67,7 @@
 
     <div class="uk-container">
 
-        <h2 class="uk-heading-divider blue">Une équipe de confiance</h2>
+        <h2 class="uk-heading-divider blue">Ils nous font confiance</h2>
 
         <div class="slider uk-visible-toggle">
 

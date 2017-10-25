@@ -2,11 +2,6 @@
 
     <div class="uk-container">
 
-        <div class="uk-alert-danger" uk-alert>
-            <a class="uk-alert-close" uk-close></a>
-            <p>ATTENTION ! il n'y a pas de message de confirmation de suppression.</p>
-        </div>
-
         <h2 class="text-center">Gestion des services</h2>
 
         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge">
@@ -100,7 +95,18 @@
 
                         <div class="uk-card-footer">
                             <a href="admin.php?page=services&modify=<?php echo $item['id']; ?>" class="uk-button uk-button-primary">Modifier</a>
-                            <a href="admin.php?page=services&delete=<?php echo $item['id']; ?>" class="uk-button uk-button-danger uk-margin-small-top">Supprimer</a>
+                            <a class="uk-button uk-button-danger uk-margin-top" uk-toggle="target: #delete-modal-<?php echo $item['id']; ?>">Supprimer</a>
+                        </div>
+
+                        <!--Modal de confirmation de suppression-->
+                        <div id="delete-modal-<?php echo $item['id']; ?>" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title blue">Etes vous sur de vouloir supprimer <?php echo $item['title']; ?> ?</h2>
+                                <p class="uk-text-right">
+                                    <a href="admin.php?page=services&delete=<?php echo $item['id']; ?>" class="uk-button uk-button-danger" type="button">OUI</a>
+                                    <button class="uk-button uk-button-secondary uk-modal-close" type="button">NON</button>
+                                </p>
+                            </div>
                         </div>
 
                     </div>

@@ -2,11 +2,6 @@
 
     <div class="uk-container">
 
-        <div class="uk-alert-danger" uk-alert>
-            <a class="uk-alert-close" uk-close></a>
-            <p>ATTENTION ! il n'y a pas de message de confirmation de suppression.</p>
-        </div>
-
         <h2 class="text-center">Gestion des secrets</h2>
 
         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge">
@@ -85,7 +80,18 @@
                         <p><?php echo $secret['description']; ?></p>
                         <div class="uk-card-footer">
                             <a href="admin.php?page=secrets&modify=<?php echo $secret['id']; ?>" class="uk-button uk-button-primary uk-margin-small-bottom">Modifier</a>
-                            <a href="admin.php?page=secrets&delete=<?php echo $secret['id']; ?>" class="uk-button uk-button-danger" uk-toggle="target: #delete-modal">Supprimer</a>
+                            <a href="" class="uk-button uk-button-danger" uk-toggle="target: #delete-modal-<?php echo $secret['id']; ?>">Supprimer</a>
+                        </div>
+
+                        <!--Modal de confirmation de suppression-->
+                        <div id="delete-modal-<?php echo $secret['id']; ?>" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title blue">Etes vous sur de vouloir supprimer <?php echo $secret['title']; ?> ?</h2>
+                                <p class="uk-text-right">
+                                    <a href="admin.php?page=secrets&delete=<?php echo $secret['id']; ?>" class="uk-button uk-button-danger" type="button">OUI</a>
+                                    <button class="uk-button uk-button-secondary uk-modal-close" type="button">NON</button>
+                                </p>
+                            </div>
                         </div>
                     </div>
 

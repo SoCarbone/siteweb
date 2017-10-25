@@ -103,11 +103,11 @@
                     </div>
                     <div class="uk-card-footer">
                         <a href="admin.php?page=recommendations&modify=<?php echo $item['id']; ?>" class="uk-button uk-button-primary uk-margin-small-left">Modifier</a>
-                        <a href="#delete-modal" class="uk-button uk-button-danger" uk-toggle="target: #delete-modal">Supprimer</a>
+                        <a class="uk-button uk-button-danger" uk-toggle="target: #delete-modal-<?php echo $item['id']; ?>">Supprimer</a>
                     </div>
 
                     <!--Modal de confirmation de suppression-->
-                    <div id="delete-modal" uk-modal>
+                    <div id="delete-modal-<?php echo $item['id']; ?>" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body">
                             <h2 class="uk-modal-title blue">Etes vous sur de vouloir supprimer la recommandation de <?php echo $item['name']; ?> ?</h2>
                             <p class="uk-text-right">

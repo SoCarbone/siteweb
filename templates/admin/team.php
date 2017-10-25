@@ -25,7 +25,7 @@
                             </div>
 
                             <div class="uk-width-1-1">
-                                <textarea class="uk-textarea" name="content" placeholder="Description des tâches" cols="3" rows="5" required><?php echo $modify_member['content']; ?></textarea>
+                                <textarea class="uk-textarea" name="content" placeholder="Description des tâches" cols="3" rows="5" required><?php echo str_replace('<br />', '', $modify_member['content']); ?></textarea>
                             </div>
 
                             <div class="uk-width-1-3">

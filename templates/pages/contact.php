@@ -2,7 +2,7 @@
 
     <div class="uk-container">
 
-        <h1 class="uk-text-center uk-lead">Un projet ? Contactez-nous et faisons connaissance !</h1>
+        <h1 class="uk-text-center uk-lead">Vous avez un projet ? <br class="uk-visible@m" />Contactez-nous !</h1>
 
     </div>
 
@@ -69,7 +69,7 @@
                         <div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
 
                         <div class="uk-form-controls">
-                            <button type="submit" name="envoi" class="uk-button uk-button-primary">Envoyer le formulaire !</button>
+                            <button type="submit" name="envoi" class="uk-button uk-button-primary">Envoyer ma demande</button>
                         </div>
 
                     </form>

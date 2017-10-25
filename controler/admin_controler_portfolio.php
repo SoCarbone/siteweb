@@ -35,7 +35,7 @@ if(isset($_GET['modify']))
 
 if(isset($_GET['itsmodify']) AND $_GET['itsmodify'] == true)
 {
-    if(isset($_FILES['image']) AND $_FILES['image']['error'] == 0)
+    /*if(isset($_FILES['image']) AND $_FILES['image']['error'] == 0)
     {
         if ($_FILES['image']['size'] <= 5242880)
         {
@@ -54,7 +54,9 @@ if(isset($_GET['itsmodify']) AND $_GET['itsmodify'] == true)
         echo '<div class="alert alert-danger" role="alert">Oups ! Il y a eu une erreur lors du téléchargement. Erreur n°' . $_FILES['image']['error'] . '</div>';
     }
 
-    updateItem($_POST['id'], $_POST['title'], $_POST['description'], $_POST['method'], $image_name, $_POST['video']);
+    updateItem($_POST['id'], $_POST['title'], $_POST['description'], $_POST['method'], $image_name, $_POST['video']);*/
+
+    updateItem($_POST['id'], $_POST['title'], $_POST['description'], $_POST['method'], $_POST['image_name'], $_POST['video']);
 }
 
 if(isset($_GET['delete']))

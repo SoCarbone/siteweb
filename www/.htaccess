@@ -15,7 +15,7 @@ RewriteEngine on
 # Maintenance :
 #ErrorDocument 403 /maintenance.php 
 #deny from all 
-#allow from 92.90.20.160
+#allow from 109.28.24.10
 #allow from 78.126.65.76
 #<Files maintenance.php>
 #allow from all

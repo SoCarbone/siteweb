@@ -2,6 +2,8 @@
 
     <div class="uk-container">
 
+        <div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Pour Alexis : penser à régler le problème d'effacement d'image lors de la modification d'un item</p></div>
+
         <h2 class="text-center">Gestion du portfolio</h2>
 
         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge">
@@ -25,9 +27,13 @@
                             <input type="text" class="uk-input" name="description" placeholder="" value="<?php echo $modify_item['description']; ?>" required>
                         </div>
 
-                        <div class="uk-width-1-3" uk-form-custom="target: true">
-                            <input type="file" class="">
-                            <input type="text" class="uk-input" name="image_name" placeholder="Choisir une image" value="<?php echo $modify_item['image_name']; ?>" disabled>
+                        <!--<div class="uk-width-1-3" uk-form-custom="target: true">
+                            <input type="file" name="image" class="">
+                            <input type="text" class="uk-input" name="image_name" placeholder="Choisir une image" value="<?php //echo $modify_item['image_name']; ?>">
+                        </div>-->
+
+                        <div class="uk-width-1-3">
+                            <input type="text" class="uk-input" name="image_name" placeholder="" value="<?php echo $modify_item['image_name']; ?>" required>
                         </div>
 
                         <div class="uk-width-1-1">
@@ -67,8 +73,8 @@
                     </div>
 
                     <div class="uk-width-1-3" uk-form-custom="target: true">
-                        <input type="file" class="">
-                        <input type="text" class="uk-input" name="image" placeholder="Choisir une image" disabled>
+                        <input type="file" name="image" class="">
+                        <input type="text" class="uk-input" name="image-name" placeholder="Choisir une image" disabled>
                     </div>
 
                     <div class="uk-width-1-1">
@@ -100,7 +106,7 @@
                 <div class="uk-width-1-4">
                     <div class="uk-card uk-card-default uk-box-shadow-medium uk-box-shadow-hover-xlarge">
                         <div class="uk-card-media-top">
-                            <img class="card-img-top" src="<?php echo $site_url . './img/portfolio/' . $item['image_name']; ?>" alt="<?php echo $item['image_name']; ?>">
+                            <img class="card-img-top" src="./img/portfolio/<?php echo $item['image_name']; ?>" alt="<?php echo $item['image_name']; ?>">
                         </div>
 
                         <div class="uk-card-body">
@@ -116,15 +122,15 @@
                         </div>
                         <div class="uk-card-footer">
                             <a href="admin.php?page=portfolio&modify=<?php echo $item['id']; ?>" class="uk-button uk-button-primary uk-margin-small-bottom">Modifier</a>
-                            <a href="#delete-modal" class="uk-button uk-button-danger" uk-toggle="target: #delete-modal">Supprimer</a>
+                            <a class="uk-button uk-button-danger" uk-toggle="target: #delete-modal-<?php echo $item['id']; ?>">Supprimer</a>
                         </div>
 
                         <!--Modal de confirmation de suppression-->
-                        <div id="delete-modal" uk-modal>
+                        <div id="delete-modal-<?php echo $item['id']; ?>" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <h2 class="uk-modal-title blue">Etes vous sur de vouloir supprimer <?php echo $item['title']; ?> ?</h2>
                                 <p class="uk-text-right">
-                                    <button href="admin.php?page=portfolio&delete=<?php echo $item['id']; ?>" class="uk-button uk-button-danger" type="button">OUI</button>
+                                    <a href="admin.php?page=portfolio&delete=<?php echo $item['id']; ?>" class="uk-button uk-button-danger" type="button">OUI</a>
                                     <button class="uk-button uk-button-secondary uk-modal-close" type="button">NON</button>
                                 </p>
                             </div>

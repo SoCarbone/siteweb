@@ -77,7 +77,7 @@ function makeImage($image_name)
         move_uploaded_file($_FILES['image']['tmp_name'], './img/portfolio/tmp/' . basename($_FILES['image']['name']));
 
         //On ajoute le logo sur l'image
-        $logo = imagecreatefrompng("./img/brand-image.png");
+        $logo = imagecreatefrompng("./img/logo-image.png");
         if($extension == 'png')
         {
             $image = imagecreatefrompng("./img/portfolio/tmp/$image_name");
