@@ -1,9 +1,9 @@
 <?php
-$prod = 'true';
+$prod = 'false';
 $maintenance = false;
 //$ip = '127.0.0.1'; //Ip local
-$ip_alexis = '2a01:cb1c:129:2f00:5d6d:c2f2:efdc:8efb'; //IP Courthézon
-$ip_laetitia = '';
+$ip_alexis = '92.90.20.188'; //IP Courthézon : 2a01:cb1c:129:2f00:5d6d:c2f2:efdc:8efb
+$ip_laetitia = '78.126.65.76';
 
 // ReCaptcha
 $public_key = '6LfJIzQUAAAAAHZbS7nZYxbrMRDn43guWdRov4lv';
@@ -53,3 +53,5 @@ $site_description = array (
 $site_keywords = array (
     "default" => 'marketing, gestiopn de projet, siteweb, jeux marketing, gameplay, wordpress, woocommerce, baniières promotionnelles, mailing, newsletter, mascotte, logo, graphiste, graphiste freelance, freelance, agence de communication, graphisme, illustration, motion-design, webdesign, sites, vidéos, intégration, développement, HTML, CSS, PHP',
 );
+
+$footer = '';

@@ -3,7 +3,7 @@
         <h2 class="uk-margin-remove-bottom">Alexis Colombo et Laëtitia Doens</h2>
         <div class="uk-grid uk-margin-bottom" uk-grid>
             <div class="uk-width-1-1 uk-width-2-3@m">
-                <p class=""><?php echo $config['footer']; ?></p>
+                <p class="">Créateurs Digital sur Avignon et Bordeaux. Nous accompagnons les agences, les professionnels et associations dans la mise en place ou l'amélioration de leur communication numérique en créant sites Web responsive et du contenu de grande qualité.</p>
             </div>
             <div class="uk-width-1-1 uk-width-1-3@m">
                 <h3>Inscrivez-vous à ma newsletter</h3>

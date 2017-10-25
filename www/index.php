@@ -1,7 +1,7 @@
 <?php
 include_once('../templates/pre_header.php');
 
-if ($_SERVER['REMOTE_ADDR'] != $ip AND $maintenance == true){
+if ($_SERVER['REMOTE_ADDR'] != $ip_alexis AND $_SERVER['REMOTE_ADDR'] != $ip_laetitia AND $maintenance == true){
     header("HTTP/1.0 302 Temporary redirect");
     header('Location : /maintenance.php');
 }
