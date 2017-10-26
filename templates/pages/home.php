@@ -2,14 +2,14 @@
 
     <div class="uk-inline-clip uk-transition-toggle uk-visible@m">
 
-        <img src="./img/big-illustration.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="" />
+        <img src="./img/big-illustration.jpg" class="uk-transition-scale-up uk-transition-opaque" alt="texte les créateurs tout-en-un" />
         <div class="uk-position-top-center">
-            <img src="./img/text-big-illustration.png" class="uk-transition-slide-top uk-margin-large-top uk-width-large" alt="Les créateurs tout en un !" />
+            <img src="./img/text-big-illustration.png" class="uk-transition-slide-top uk-margin-large-top uk-width-large" alt="Illustration Alexis et Laëtitia" />
         </div>
 
     </div>
 
-    <img src="./img/big-illustration-mobile.jpg" class="uk-hidden@m" alt="Le créateur tout en un !" />
+    <img src="./img/big-illustration-mobile.jpg" class="uk-hidden@m" alt="illustration les créateurs tout-en-un" />
 
 
 
@@ -39,7 +39,7 @@
                 <div class="uk-width-1-2" uk-scrollspy="cls:uk-animation-slide-bottom">
 
                     <div class="uk-display-block uk-transition-toggle uk-border-circle uk-overflow-hidden avatar">
-                        <img src="./img/partners/<?php echo $member['image_name']; ?>" class="uk-transition-scale-up uk-transition-opaque" alt="<?php echo $member['name']; ?>" />
+                        <img src="./img/partners/<?php echo $member['image_name']; ?>" class="uk-transition-scale-up uk-transition-opaque" alt="avatar <?php echo $member['name']; ?>" />
                     </div>
                     <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge uk-text-center team">
 
@@ -84,10 +84,12 @@
                                 <p class="uk-text-meta"><span class="uk-text-bold"><?php echo $item['name']; ?></span> <?php echo $item['function']; ?></p>
                             </div>
                         </div>
-
-                        <div class="uk-width-1-1 uk-width-auto@m">
-                            <img src="./img/clients/<?php echo $item['image_name']; ?>" alt="<?php echo $item['image_name']; ?>" class="uk-responsive-width">
-                        </div>
+                        <?php if(!empty($item['image_name']))
+                        {?>
+                            <div class="uk-width-1-1 uk-width-auto@m">
+                                <img src="./img/clients/<?php echo $item['image_name']; ?>" alt="logo <?php echo $item['image_name']; ?>" class="uk-responsive-width">
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
                 <?php

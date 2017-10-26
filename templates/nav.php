@@ -17,7 +17,7 @@
         <div class="uk-container">
 
             <div class="uk-flex uk-flex-center uk-margin-bottom uk-margin-top">
-                <a href="home.html"><img src="./img/logo.png" class="uk-responsive-width" id="logo" alt="logo Alexis Colombo" uk-scrollspy="cls:uk-animation-slide-top"/></a>
+                <a href="home.html"><img src="./img/logo.png" class="uk-responsive-width" id="logo" alt="logo Alexis et Laëtitia" uk-scrollspy="cls:uk-animation-slide-top"/></a>
             </div>
         </div>
     </div>
