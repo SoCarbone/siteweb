@@ -2,6 +2,8 @@
 
     <div class="uk-container">
 
+        <?php if(isset($maintenance_message)) { echo $maintenance_message; } ?>
+
         <h2 class="text-center">Configuration</h2>
 
         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-box-shadow-hover-xlarge">
@@ -10,16 +12,16 @@
 
                 <?php if(isset($final_message)) { echo $final_message; } ?>
 
-                <!--<legend class="uk-legend">Maintenance</legend>
+                <legend class="uk-legend">Mode maintenance</legend>
 
                 <div class="uk-width-1-1">
                     <select class="uk-select" name="maintenance">
-                        <option value="false">Off</option>
-                        <option value="true">On</option>
+                        <option value="0" <?php if($config['maintenance'] == 0){ echo 'selected'; } ?>>Off</option>
+                        <option value="1" <?php if($config['maintenance'] == 1){ echo 'selected'; } ?>>On</option>
                     </select>
-                </div>-->
+                </div>
 
-                <legend class="uk-legend">Infos par défaut des pages</legend>
+                <legend class="uk-legend uk-margin-large-top">Infos de l'Accueil et des pages annexes</legend>
 
                 <div class="uk-width-1-1">
                     <label class="uk-form-label" for="default_title">Title</label>

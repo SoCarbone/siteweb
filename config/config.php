@@ -1,15 +1,7 @@
 <?php
-$prod = 'false';
-$maintenance = false;
-//$ip = '127.0.0.1'; //Ip local
-$ip_alexis = '92.90.20.188'; //IP Courthézon : 2a01:cb1c:129:2f00:5d6d:c2f2:efdc:8efb
-$ip_laetitia = '78.126.65.76';
+$prod = false;
 
-// ReCaptcha
-$public_key = '6LfJIzQUAAAAAHZbS7nZYxbrMRDn43guWdRov4lv';
-$secret = "6LfJIzQUAAAAAMdK-v3AuzIM9UYkiHge7k5KXtBO";
-
-if($prod == 'false') {
+if($prod == false) {
     // My LOCAL database data
     $db_name = 'alexiscolombo';
     $hostname = 'localhost';
@@ -32,6 +24,15 @@ foreach($the_config as $key => $config)
 {
 
 }
+
+$maintenance = $config['maintenance'];
+//$ip_alexis = '127.0.0.1'; //Ip local
+$ip_alexis = '92.90.20.188';
+$ip_laetitia = '78.126.65.76';
+
+// ReCaptcha
+$public_key = '6LfJIzQUAAAAAHZbS7nZYxbrMRDn43guWdRov4lv';
+$secret = "6LfJIzQUAAAAAMdK-v3AuzIM9UYkiHge7k5KXtBO";
 
 $author = 'Alexis Colombo et Laëtitia Doens - Créateurs digital - www.alexiscolombo.fr';
 //$site_url = 'http://localhost/alexiscolombo/www/';
