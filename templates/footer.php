@@ -19,12 +19,12 @@
 
         <ul class="uk-navbar-nav uk-nav-default uk-visible@m">
             <?php include('../templates/menu.php') ?>
-            <!--<li class="<?php //if(isset($_GET['page']) AND $_GET['page'] == 'mentions') { echo 'uk-active'; } ?>"><a class="" href="mentions.html">Mentions légales</a></li>-->
+            <li class="<?php if(isset($_GET['page']) AND $_GET['page'] == 'mentions') { echo 'uk-active'; } ?>"><a class="" href="mentions.html">Mentions légales</a></li>
         </ul>
 
         <ul class="uk-nav uk-nav-default uk-hidden@m">
             <?php include('../templates/menu.php') ?>
-            <!--<li class="<?php //if(isset($_GET['page']) AND $_GET['page'] == 'mentions') { echo 'uk-active'; } ?>"><a class="" href="mentions.html">Mentions légales</a></li>-->
+            <li class="<?php if(isset($_GET['page']) AND $_GET['page'] == 'mentions') { echo 'uk-active'; } ?>"><a class="" href="mentions.html">Mentions légales</a></li>
         </ul>
 
     </div>
