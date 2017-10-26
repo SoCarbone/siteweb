@@ -8,6 +8,8 @@
 
             <form method="post" name="add_project" action="admin.php?page=config" enctype="multipart/form-data" class="uk-grid-small" uk-grid>
 
+                <?php if(isset($final_message)) { echo $final_message; } ?>
+
                 <!--<legend class="uk-legend">Maintenance</legend>
 
                 <div class="uk-width-1-1">
