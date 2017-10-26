@@ -23,7 +23,7 @@ function getSecret($id)
 
 function updateSecret($id, $description, $title)
 {
-    $description = nl2br(htmlspecialchars($description));
+    /*$description = nl2br(htmlspecialchars($description));*/
     $title = htmlspecialchars($title);
 
     global $bdd;
@@ -36,7 +36,7 @@ function updateSecret($id, $description, $title)
 
 function addSecret($description, $title)
 {
-    $description = nl2br(htmlspecialchars($description));
+    /*$description = nl2br(htmlspecialchars($description));*/
     $title = htmlspecialchars($title);
 
     global $bdd;

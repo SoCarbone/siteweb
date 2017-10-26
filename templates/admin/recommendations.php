@@ -18,7 +18,7 @@
                         <input type="hidden" class="" name="id" placeholder="" value="<?php echo $modify_item['id']; ?>">
 
                         <div class="uk-width-1-1">
-                            <textarea class="uk-textarea" name="content" placeholder="Description des tâches" cols="3" rows="5" required><?php echo $modify_item['content']; ?></textarea>
+                            <textarea class="uk-textarea" id="editor" name="content" placeholder="Description des tâches" cols="3" rows="5" required><?php echo $modify_item['content']; ?></textarea>
                         </div>
 
                         <div class="uk-width-1-3">
@@ -54,7 +54,7 @@
                 <form method="post" name="add_recommendations" action="admin.php?page=recommendations&add=true" enctype="multipart/form-data" class="uk-grid-small" uk-grid>
 
                     <div class="uk-width-1-1">
-                        <textarea class="uk-textarea" name="content" placeholder="Contenu de la recommendation" cols="3" rows="5" required></textarea>
+                        <textarea class="uk-textarea" id="editor" name="content" placeholder="Contenu de la recommendation" cols="3" rows="5" required></textarea>
                     </div>
 
                     <div class="uk-width-1-3">
@@ -79,6 +79,8 @@
             <?php
             }
             ?>
+
+            <?php include_once('../templates/admin/editor.php'); ?>
 
         </div>
 

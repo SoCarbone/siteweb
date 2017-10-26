@@ -25,7 +25,8 @@
                             </div>
 
                             <div class="uk-width-1-1">
-                                <textarea class="uk-textarea" name="content" placeholder="Description des tâches" cols="3" rows="5" required><?php echo str_replace('<br />', '', $modify_member['content']); ?></textarea>
+                                <textarea class="uk-textarea" id="editor" name="content" placeholder="Description des tâches" cols="3" rows="15" required><?php echo str_replace('<br />', '', $modify_member['content']); ?></textarea>
+                                <?php include_once('../templates/admin/editor.php'); ?>
                             </div>
 
                             <div class="uk-width-1-3">
@@ -63,7 +64,7 @@
                             <p class="uk-text-small uk-margin-remove-top"><?php echo $member['function']; ?></p>
                         </div>
 
-                        <p class="uk-text-justify"><?php echo $member['content']; ?></p>
+                        <div class="uk-text-justify"><?php echo $member['content']; ?></div>
 
                         <div class="uk-card-footer">
                             <a href="admin.php?page=team&modify=<?php echo $member['id']; ?>" class="uk-button uk-button-primary uk-margin-small-left">Modifier</a>

@@ -18,8 +18,8 @@
             <ul class="uk-nav-parent-icon" uk-nav>
                 <li><a href="admin.php">Tableau de bord</a></li>
                 <li><a href="admin.php?page=config">Configuration</a></li>
-                <li><a href="admin.php?page=recommendations">Recommendations</a></li>
                 <li><a href="admin.php?page=team">&Eacute;quipe</a></li>
+                <li><a href="admin.php?page=recommendations">Recommendations</a></li>
                 <li><a href="admin.php?page=secrets">Nos secrets</a></li>
                 <li><a href="admin.php?page=services">Services</a></li>
                 <li><a href="admin.php?page=portfolio">Réalisations</a></li>

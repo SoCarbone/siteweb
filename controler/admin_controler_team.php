@@ -14,10 +14,6 @@ $team = getTeam();
 
 foreach($team as $key => $member)
 {
-    $team[$key]['id'] = $member['id'];
-    $team[$key]['content'] = $member['content'];
-    $team[$key]['name'] = $member['name'];
-    $team[$key]['function'] = $member['function'];
-    $team[$key]['image_name'] = $member['image_name'];
+
 }
 

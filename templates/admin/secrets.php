@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="uk-width-1-1">
-                            <textarea class="uk-textarea" name="description" placeholder="Desciption du service" cols="3" rows="5" required><?php echo $modify_secret['description']; ?></textarea>
+                            <textarea class="uk-textarea" id="editor" name="description" placeholder="Desciption du service" cols="3" rows="5" required><?php echo $modify_secret['description']; ?></textarea>
                         </div>
 
                         <div class="uk-width-1-1">
@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="uk-width-1-1">
-                        <textarea class="uk-textarea" name="description" placeholder="Desciption du service" cols="3" rows="5" required></textarea>
+                        <textarea class="uk-textarea" id="editor" name="description" placeholder="Desciption du service" cols="3" rows="5" required></textarea>
                     </div>
 
                     <div class="uk-width-1-1">
@@ -63,6 +63,8 @@
             <?php
             }
             ?>
+
+            <?php include_once('../templates/admin/editor.php'); ?>
 
         </div>
 

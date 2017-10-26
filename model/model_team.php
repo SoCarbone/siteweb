@@ -23,7 +23,7 @@ function getMember($id)
 
 function updateMember($id, $content, $name, $function, $image_name)
 {
-    $content = nl2br(htmlspecialchars($content));
+    /*$content = nl2br(htmlspecialchars($content));*/
     $name = htmlspecialchars($name);
     $function = htmlspecialchars($function);
     $image_name = htmlspecialchars($image_name);

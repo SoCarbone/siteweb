@@ -25,7 +25,7 @@ function updateItem($id, $title, $description, $method, $image_name, $video)
 {
     $title = htmlspecialchars($title);
     $description = htmlspecialchars($description);
-    $method = htmlspecialchars($method);
+    /*$method = htmlspecialchars($method);*/
     $image_name = htmlspecialchars($image_name);
 
     global $bdd;
@@ -43,7 +43,7 @@ function addItem($title, $description, $method, $image_name, $video)
 {
     $title = htmlspecialchars($title);
     $description = htmlspecialchars($description);
-    $method = htmlspecialchars($method);
+    /*$method = htmlspecialchars($method);*/
     $image_name = htmlspecialchars($image_name);
 
     global $bdd;

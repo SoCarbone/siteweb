@@ -2,7 +2,7 @@
 
     <div class="uk-container">
 
-        <div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Pour Alexis : penser à régler le problème d'effacement d'image lors de la modification d'un item</p></div>
+        <!--<div class="uk-alert-danger" uk-alert><a class="uk-alert-close" uk-close></a><p>Pour Alexis : penser à régler le problème d'effacement d'image lors de la modification d'un item</p></div>-->
 
         <h2 class="text-center">Gestion du portfolio</h2>
 
@@ -27,21 +27,19 @@
                             <input type="text" class="uk-input" name="description" placeholder="" value="<?php echo $modify_item['description']; ?>" required>
                         </div>
 
-                        <!--<div class="uk-width-1-3" uk-form-custom="target: true">
+                        <div class="uk-width-1-3" uk-form-custom="target: true">
                             <input type="file" name="image" class="">
-                            <input type="text" class="uk-input" name="image_name" placeholder="Choisir une image" value="<?php //echo $modify_item['image_name']; ?>">
-                        </div>-->
-
-                        <div class="uk-width-1-3">
-                            <input type="text" class="uk-input" name="image_name" placeholder="" value="<?php echo $modify_item['image_name']; ?>" required>
+                            <input type="text" class="uk-input" name="new_image_name" placeholder="Choisir une image" value="<?php echo $modify_item['image_name']; ?>">
                         </div>
+
+                        <input type="hidden" class="uk-input" name="image_name" placeholder="" value="<?php echo $modify_item['image_name']; ?>" required>
 
                         <div class="uk-width-1-1">
                             <input type="text" class="uk-input" name="video" placeholder="Si c'est une vidéo, mettre l'url complète"  value="<?php if(isset($modify_item['video'])) {echo $modify_item['video'];} ?>">
                         </div>
 
                         <div class="uk-width-1-1">
-                            <textarea class="uk-textarea" name="method" placeholder="Description des tâches" cols="3" rows="5" required><?php echo $modify_item['method']; ?></textarea>
+                            <textarea class="uk-textarea" id="editor" name="method" placeholder="Description des tâches" cols="3" rows="5" required><?php echo $modify_item['method']; ?></textarea>
                         </div>
 
                         <div class="uk-width-1-1">
@@ -82,7 +80,7 @@
                     </div>
 
                     <div class="uk-width-1-1">
-                        <textarea class="uk-textarea" name="method" placeholder="Description des tâches" cols="3" rows="5" required></textarea>
+                        <textarea class="uk-textarea" id="editor" name="method" placeholder="Description des tâches" cols="3" rows="5" required></textarea>
                     </div>
 
                     <div class="uk-width-1-1">
@@ -95,6 +93,8 @@
             <?php
             }
             ?>
+
+            <?php include_once('../templates/admin/editor.php'); ?>
 
         </div>
 

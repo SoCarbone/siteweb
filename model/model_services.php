@@ -23,7 +23,7 @@ function getItem($id)
 
 function updateItem($id, $description, $title, $image_name)
 {
-    $description = nl2br(htmlspecialchars($description));
+    /*$description = nl2br(htmlspecialchars($description));*/
     $title = htmlspecialchars($title);
     $image_name = htmlspecialchars($image_name);
 
@@ -38,7 +38,7 @@ function updateItem($id, $description, $title, $image_name)
 
 function addItem($description, $title, $image_name)
 {
-    $description = nl2br(htmlspecialchars($description));
+   /* $description = nl2br(htmlspecialchars($description));*/
     $title = htmlspecialchars($title);
     $image_name = htmlspecialchars($image_name);
 
