@@ -3,7 +3,7 @@
         <h2 class="uk-margin-remove-bottom">Alexis Colombo et Laëtitia Doens</h2>
         <div class="uk-grid uk-margin-bottom" uk-grid>
             <div class="uk-width-1-1 uk-width-2-3@m">
-                <p class="">Experts en création digitale sur Avignon et Bordeaux. Nous accompagnons les agences, les marques et les institutionnels dans la mise en place ou l'amélioration de leur communication numérique, par la création de sites web responsive et de contenu de grande qualité.</p>
+                <p class=""><?php echo $config['footer']; ?></p>
             </div>
             <div class="uk-width-1-1 uk-width-1-3@m">
                 <h3>Inscrivez-vous à notre newsletter</h3>
@@ -19,10 +19,12 @@
 
         <ul class="uk-navbar-nav uk-nav-default uk-visible@m">
             <?php include('../templates/menu.php') ?>
+            <!--<li class="<?php //if(isset($_GET['page']) AND $_GET['page'] == 'mentions') { echo 'uk-active'; } ?>"><a class="" href="mentions.html">Mentions légales</a></li>-->
         </ul>
 
         <ul class="uk-nav uk-nav-default uk-hidden@m">
             <?php include('../templates/menu.php') ?>
+            <!--<li class="<?php //if(isset($_GET['page']) AND $_GET['page'] == 'mentions') { echo 'uk-active'; } ?>"><a class="" href="mentions.html">Mentions légales</a></li>-->
         </ul>
 
     </div>

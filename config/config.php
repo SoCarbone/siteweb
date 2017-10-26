@@ -25,13 +25,13 @@ else {
 }
 
 include_once('../model/db_connection.php');
-/*include_once('../model/model_config.php');
+include_once('../model/model_config.php');
 $the_config = getConfig();
 
 foreach($the_config as $key => $config)
 {
 
-}*/
+}
 
 $author = 'Alexis Colombo et Laëtitia Doens - Créateurs digital - www.alexiscolombo.fr';
 //$site_url = 'http://localhost/alexiscolombo/www/';
@@ -39,19 +39,22 @@ $site_url = 'http://www.alexiscolombo.fr';
 
 // Données SEO des pages. Ne mettre que les données spécifiques, les pages sans importance prendront $site_title ou $description_title
 $site_title = array (
-    "default" => 'Alexis et Laëtitia - Création digital à Bordeaux et Avignon',
-    "services" => 'Création de projets digitaux',
-    "portfolio" => 'Nos réalisations digitales',
-    "contact" => 'Contactez-nous pour faire un devis'
+    "default" => $config['default_title'],
+    "services" => $config['services_title'],
+    "portfolio" => $config['portfolio_title'],
+    "contact" => $config['contact_title']
 );
 
 $site_description = array (
-    "default" => 'Créateurs de site web et de contenus digital à Bordeaux et Avignon',
-    /*"portfolio" => 'Une agence de communication doit savoir s’entourer de spécialistes tel qu\'un Créateur NUM&Eacute;RIQUE freelance.'*/
+    "default" => $config['default_description'],
+    "services" => $config['services_description'],
+    "portfolio" => $config['portfolio_description'],
+    "contact" => $config['contact_description']
 );
 
 $site_keywords = array (
-    "default" => 'marketing, gestiopn de projet, siteweb, jeux marketing, gameplay, wordpress, woocommerce, baniières promotionnelles, mailing, newsletter, mascotte, logo, graphiste, graphiste freelance, freelance, agence de communication, graphisme, illustration, motion-design, webdesign, sites, vidéos, intégration, développement, HTML, CSS, PHP',
+    "default" => $config['default_keywords'],
+    "services" => $config['services_keywords'],
+    "portfolio" => $config['portfolio_keywords'],
+    "contact" => $config['contact_keywords']
 );
-
-$footer = '';
