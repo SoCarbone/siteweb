@@ -90,7 +90,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="plugins/slick-1.8.0/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick/slick-theme.css"/>
 
     <!--Masonry-->
     <script type="text/javascript" src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js"></script>
