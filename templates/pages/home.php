@@ -36,7 +36,7 @@
             foreach($team as $member)
             {
                 ?>
-                <div class="uk-width-1-2" uk-scrollspy="cls:uk-animation-slide-bottom">
+                <div class="uk-width-1-1 uk-width-1-2@m" uk-scrollspy="cls:uk-animation-slide-bottom">
 
                     <div class="uk-display-block uk-transition-toggle uk-border-circle uk-overflow-hidden avatar">
                         <img src="./img/partners/<?php echo $member['image_name']; ?>" class="uk-transition-scale-up uk-transition-opaque" alt="avatar <?php echo $member['name']; ?>" />
@@ -45,7 +45,7 @@
 
                         <div class="team-title uk-margin-medium-bottom">
                             <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center"><?php echo $member['name']; ?></h3>
-                            <p class="uk-text-small uk-margin-remove-top"><?php echo $member['function']; ?></p>
+                            <p class="uk-text-small uk-margin-remove-top uk-text-center"><?php echo $member['function']; ?></p>
                         </div>
 
                         <p class="uk-text-justify"><?php echo $member['content']; ?></p>
@@ -101,7 +101,7 @@
         <script type="text/javascript">
             $(document).ready(function(){
               $('.slider').slick({
-                //setting-name: setting-value
+                adaptiveHeight: true,
                   autoplay: true,
                   prevArrow: '<a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-previous></a>',
                   nextArrow: '<a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large" href="#" uk-slidenav-next></a>'
@@ -137,7 +137,7 @@
                 foreach($secrets as $secret)
                 {
                     ?>
-                    <div class="uk-width-1-2 uk-width-1-4@m">
+                    <div class="uk-width-1-1 uk-width-1-4@m">
                         <div class="uk-card">
                             <div class="team-title uk-margin-small-bottom">
                                 <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center"><?php echo $secret['title']; ?></h3>
@@ -149,30 +149,6 @@
                     <?php
                 }
                 ?>
-                <!--<div class="uk-width-1-2 uk-width-1-4@m">
-                    <div class="team-title uk-margin-small-bottom">
-                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Notre expertise</h3>
-                    </div>
-                    <p>forgé par une expérience de 10 ans auprès de grands comptes.</p>
-                </div>
-                <div class="uk-width-1-2 uk-width-1-4@m">
-                    <div class="team-title uk-margin-small-bottom">
-                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Notre ponctualité</h3>
-                    </div>
-                    <p>grâce à une gestion de projet réglé à la seconde près !</p>
-                </div>
-                <div class="uk-width-1-2 uk-width-1-4@m">
-                    <div class="team-title uk-margin-small-bottom">
-                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Nos conseils</h3>
-                    </div>
-                    <p>basés sur notre expérience et notre veille numérique.</p>
-                </div>
-                <div class="uk-width-1-2 uk-width-1-4@m">
-                    <div class="team-title uk-margin-small-bottom">
-                        <h3 class="uk-card-title uk-margin-remove-bottom uk-text-center">Notre bonne humeur</h3>
-                    </div>
-                    <p>parce qu'on est SYMPA !</p>
-                </div>-->
             </div>
 
         </div>

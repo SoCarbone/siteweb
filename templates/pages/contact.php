@@ -66,7 +66,7 @@
                             </div>
                             <p class="uk-text-small uk-margin-remove-top">*Champ obligatoire</p>
 
-                        <div class="g-recaptcha" data-sitekey="<?php echo $public_key; ?>"></div>
+                        <div class="g-recaptcha uk-responsive-width" data-sitekey="<?php echo $public_key; ?>"></div>
 
                         <div class="uk-form-controls">
                             <button type="submit" name="envoi" class="uk-button uk-button-primary">Envoyer ma demande</button>

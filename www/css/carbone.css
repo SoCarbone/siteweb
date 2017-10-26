@@ -416,11 +416,6 @@ Footer
 .footer-bottom p {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-bottom p:before {
-  font-family: FontAwesome;
-  content: '\f1f9';
-  margin-right: 5px;
-}
 .footer-bottom .uk-container {
   padding-top: 10px;
   padding-bottom: 5px;
